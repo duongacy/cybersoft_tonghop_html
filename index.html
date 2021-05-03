@@ -31,6 +31,7 @@
             integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA=="
             crossorigin="anonymous"
         />
+        <link rel="stylesheet" href="./lib/mixitup/css/style.css" />
         <link rel="stylesheet" href="./main.css" />
     </head>
     <body>
@@ -226,18 +227,18 @@
             </div>
         </section>
 
-        <section class="about-section" id="about">
-            <div class="container py-5">
-                <p class="text-center h2">WE LOVE TO DESIGN</p>
+        <section class="section" id="about">
+            <div class="container section__content">
+                <div class="section__heading">
+                    <p class="section__title">WE LOVE TO DESIGN</p>
+                    <p class="section__describe">
+                        Lid est laborum dolo rumes fugats untras. Etharums ser
+                        quidem rerum facilis dolores nemis omnis fugats vitaes
+                        nemo minima rerums unsers sadips amets.
+                    </p>
+                </div>
                 <div class="row g-5">
-                    <div class="col-12">
-                        <p class="text-center text-muted">
-                            Lid est laborum dolo rumes fugats untras. Etharums
-                            ser quidem rerum facilis dolores nemis omnis fugats
-                            vitaes nemo minima rerums unsers sadips amets.
-                        </p>
-                    </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 item">
                         <div
                             class="feature-border-box animate__animated"
                             animateClass="animate__fadeInLeft"
@@ -246,10 +247,8 @@
                                 <i class="far fa-edit fa-2x"></i>
                             </div>
                             <div class="feature-content">
-                                <p class="text-dark lead feature-title">
-                                    MODERN DESIGN
-                                </p>
-                                <p class="text-muted">
+                                <p class="item__title">MODERN DESIGN</p>
+                                <p class="item__describe">
                                     Fringilla augue at maximus vestibulum. Nam
                                     pulvinar vitae neque et porttitor. Praesent
                                     sed nisi eleifend.
@@ -257,7 +256,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 item">
                         <div
                             class="feature-border-box animate__animated"
                             animateClass="animate__fadeInUp"
@@ -266,10 +265,8 @@
                                 <i class="fas fa-tablet-alt fa-2x"></i>
                             </div>
                             <div class="feature-content">
-                                <p class="text-dark lead feature-title">
-                                    BOOTSTRAP
-                                </p>
-                                <p class="text-muted">
+                                <p class="item__title">BOOTSTRAP</p>
+                                <p class="item__describe">
                                     Fringilla augue at maximus vestibulum. Nam
                                     pulvinar vitae neque et porttitor. Praesent
                                     sed nisi eleifend.
@@ -277,7 +274,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 item">
                         <div
                             class="feature-border-box animate__animated"
                             animateClass="animate__fadeInRight"
@@ -286,10 +283,8 @@
                                 <i class="fas fa-glass-martini-alt fa-2x"></i>
                             </div>
                             <div class="feature-content">
-                                <p class="text-dark lead feature-title">
-                                    CLEAN CODE
-                                </p>
-                                <p class="text-muted">
+                                <p class="item__title">CLEAN CODE</p>
+                                <p class="item__describe">
                                     Fringilla augue at maximus vestibulum. Nam
                                     pulvinar vitae neque et porttitor. Praesent
                                     sed nisi eleifend.
@@ -304,20 +299,20 @@
                 style="background-image: url('./images/4.jpg')"
             >
                 <div class="dark-overlay d-none d-lg-block"></div>
-                <div class="container text-white">
-                    <div class="row">
-                        <div
-                            class="col-lg-6 d-flex align-items-center p-5 experiences__left"
-                        >
-                            <p class="h2 text-center experiences__title">
+                <div class="container py-5">
+                    <div class="row m-0">
+                        <div class="col-lg-6 d-flex align-items-center px-5">
+                            <p
+                                class="section__title text-white w-100 text-lg-end"
+                            >
                                 SKILLS AND EXPERIENCE
                             </p>
                         </div>
-                        <div class="col-lg-6 p-5 experiences__right">
-                            <p class="h4 experiences-title">
+                        <div class="col-lg-6 item about-item px-5">
+                            <p class="item__title text-white">
                                 WE ARE DAMN EXPART !
                             </p>
-                            <p class="describe">
+                            <p class="item__describe text-white">
                                 We are a team of multi-skilled and curious
                                 digital specialists who are always up for a
                                 massive challenge forever. We are a team of
@@ -368,15 +363,16 @@
             </div>
         </section>
 
-        <section class="container py-5" id="team">
-            <p class="text-center h2">OUR TEAM</p>
-            <div>
-                <p class="text-center text-muted">
+        <section class="container section" id="team">
+            <div class="section__heading">
+                <p class="section__title">OUR TEAM</p>
+                <p class="section__describe">
                     Lid est laborum dolo rumes fugats untras. Etharums ser
                     quidem rerum facilis dolores nemis omnis fugats vitaes nemo
                     minima rerums unsers sadips amets.
                 </p>
             </div>
+
             <div class="row gx-5 py-4">
                 <div
                     class="col-lg-4 animate__animated"
@@ -396,9 +392,15 @@
                             </div>
 
                             <div class="overlay__list-icon">
-                                <a href="" class="icon mx-3"><i class="fab fa-facebook-f"></i></a>
-                                <a href="" class="icon mx-3"><i class="fab fa-twitter"></i></a>
-                                <a href="" class="icon mx-3"><i class="fab fa-google-plus-g"></i></a>
+                                <a href="" class="icon mx-3"
+                                    ><i class="fab fa-facebook-f"></i
+                                ></a>
+                                <a href="" class="icon mx-3"
+                                    ><i class="fab fa-twitter"></i
+                                ></a>
+                                <a href="" class="icon mx-3"
+                                    ><i class="fab fa-google-plus-g"></i
+                                ></a>
                             </div>
                         </div>
                         <div class="item__info text-end">
@@ -415,7 +417,7 @@
                         <img src="./images/t-2.jpg" class="w-100" />
                         <div class="item__overlay">
                             <div class="overlay__content">
-                                <p class="overlay__title">I LOVE TO DESIGN</p>
+                                <p class="overlay__title">HELLO THERE..</p>
                                 <p class="overlay__describe">
                                     We are a team of multi-skilled and curious
                                     digital specialists who are always up for a
@@ -425,14 +427,20 @@
                             </div>
 
                             <div class="overlay__list-icon">
-                                <a href="" class="icon mx-3"><i class="fab fa-facebook-f"></i></a>
-                                <a href="" class="icon mx-3"><i class="fab fa-twitter"></i></a>
-                                <a href="" class="icon mx-3"><i class="fab fa-google-plus-g"></i></a>
+                                <a href="" class="icon mx-3"
+                                    ><i class="fab fa-facebook-f"></i
+                                ></a>
+                                <a href="" class="icon mx-3"
+                                    ><i class="fab fa-twitter"></i
+                                ></a>
+                                <a href="" class="icon mx-3"
+                                    ><i class="fab fa-google-plus-g"></i
+                                ></a>
                             </div>
                         </div>
                         <div class="item__info text-end">
-                            <p class="name">MARTIN SMITH</p>
-                            <p class="role">FOUNDER & CEO</p>
+                            <p class="name">Franklin Harbet</p>
+                            <p class="role">HR MANAGER</p>
                         </div>
                     </div>
                 </div>
@@ -444,7 +452,7 @@
                         <img src="./images/t-3.jpg" class="w-100" />
                         <div class="item__overlay">
                             <div class="overlay__content">
-                                <p class="overlay__title">I LOVE TO DESIGN</p>
+                                <p class="overlay__title">ITS AWESOME</p>
                                 <p class="overlay__describe">
                                     We are a team of multi-skilled and curious
                                     digital specialists who are always up for a
@@ -454,18 +462,141 @@
                             </div>
 
                             <div class="overlay__list-icon">
-                                <a href="" class="icon mx-3"><i class="fab fa-facebook-f"></i></a>
-                                <a href="" class="icon mx-3"><i class="fab fa-twitter"></i></a>
-                                <a href="" class="icon mx-3"><i class="fab fa-google-plus-g"></i></a>
+                                <a href="" class="icon mx-3"
+                                    ><i class="fab fa-facebook-f"></i
+                                ></a>
+                                <a href="" class="icon mx-3"
+                                    ><i class="fab fa-twitter"></i
+                                ></a>
+                                <a href="" class="icon mx-3"
+                                    ><i class="fab fa-google-plus-g"></i
+                                ></a>
                             </div>
                         </div>
                         <div class="item__info text-end">
-                            <p class="name">MARTIN SMITH</p>
-                            <p class="role">FOUNDER & CEO</p>
+                            <p class="name">LINDA ANDERSON</p>
+                            <p class="role">MARKETING MANAGER</p>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
+
+        <section id="portfolio">
+            <div class="container py-5">
+                <div class="section__heading">
+                    <div class="section__title">PORTFOLIO</div>
+                    <div class="section__describe">Lid est laborum dolo rumes fugats untras. Etharums ser
+                        quidem rerum facilis dolores nemis omnis fugats vitaes nemo
+                        minima rerums unsers sadips amets.</div>
+                </div>
+                <ul class="nav justify-content-center py-3">
+                    <li class="nav-item">
+                        <a
+                            class="nav-link active"
+                            data-filter="all"
+                            aria-current="page"
+                            >ALL</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-filter=".printing">PRINTING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-filter=".web">WEB</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-filter=".illutration"
+                            >ILLUTRATION</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-filter=".media">MEDIA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-filter=".crafts">CRAFTS</a>
+                    </li>
+                </ul>
+
+                <div class="row g-2 container1">
+                    <div class="col-sm-6 col-md-4 col-lg-3 mix printing">
+                        <div class="portfolio__item">
+                            <img src="./images/01.jpg" class="w-100" alt="" />
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 mix web crafts">
+                        <div class="portfolio__item">
+                            <img src="./images/02.jpg" class="w-100" alt="" />
+                        </div>
+                    </div>
+                    <div
+                        class="col-sm-6 col-md-4 col-lg-3 mix web illutration crafts"
+                    >
+                        <div class="portfolio__item">
+                            <img src="./images/03.jpg" class="w-100" alt="" />
+                        </div>
+                    </div>
+                    <div
+                        class="col-sm-6 col-md-4 col-lg-3 mix illutration media printing"
+                    >
+                        <div class="portfolio__item">
+                            <img src="./images/04.jpg" class="w-100" alt="" />
+                        </div>
+                    </div>
+                    <div
+                        class="col-sm-6 col-md-4 col-lg-3 mix web media printing media crafts"
+                    >
+                        <div class="portfolio__item">
+                            <img src="./images/05.jpg" class="w-100" alt="" />
+                        </div>
+                    </div>
+                    <div
+                        class="col-sm-6 col-md-4 col-lg-3 mix illutration media crafts"
+                    >
+                        <div class="portfolio__item">
+                            <img src="./images/06.jpg" class="w-100" alt="" />
+                        </div>
+                    </div>
+                    <div
+                        class="col-sm-6 col-md-4 col-lg-3 mix illutration media web printing"
+                    >
+                        <div class="portfolio__item">
+                            <img src="./images/07.jpg" class="w-100" alt="" />
+                        </div>
+                    </div>
+                    <div
+                        class="col-sm-6 col-md-4 col-lg-3 mix media crafts web printing"
+                    >
+                        <div class="portfolio__item">
+                            <img src="./images/08.jpg" class="w-100" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-dark py-5 text-white">
+                ARE YOU IMPRESSED WITH OUR CREATIVE WORK? START BUILDING YOUR
+                PROJECT WITH MASSIVE
+                <button>purchase now</button>
+            </div>
+        </section>
+
+        <section class="container py-5" id="services">
+            <p class="text-center h2">MASSIVE SERVICES</p>
+
+            <p class="text-center text-mutedn py-3">
+                Lid est laborum dolo rumes fugats untras. Etharums ser quidem
+                rerum facilis dolores nemis omnis fugats vitaes nemo minima
+                rerums unsers sadips amets.
+            </p>
+        </section>
+        <section class="container py-5" id="features">
+            <p class="text-center h2">CORE FEATURE</p>
+
+            <p class="text-center text-mutedn py-3">
+                Phasellus fringilla suscipit risus nec eleifend. Pellentesque eu
+                quam sem, ac malesuada leo sem quam pellente. Awesome sliders
+                give you the opportunity to showcase your content.
+            </p>
         </section>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -479,6 +610,12 @@
             integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
             crossorigin="anonymous"
         ></script>
+        <script src="./lib/mixitup/js/mixitup.min.js"></script>
+        <script>
+            var containerEl = document.querySelector('.container1');
+
+            var mixer = mixitup(containerEl);
+        </script>
         <script src="./main.js"></script>
     </body>
 </html>

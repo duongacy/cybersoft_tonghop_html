@@ -10,8 +10,6 @@ window.onload = function () {
         addAboutAnimate();
         addProgressAnimate();
     })
-    
-
 }
 
 function switchMenu() {
@@ -30,7 +28,9 @@ function addAboutAnimate() {
     animateElements.forEach(function (item, index) {
         var itemBoundingBox = item.getBoundingClientRect();
         if (itemBoundingBox.bottom <= window.innerHeight) {
+            item.classList.remove(item.getAttribute("animateClass"));
             item.classList.add(item.getAttribute("animateClass"));
+            item.style.opacity = 1;
         }
     })
 }

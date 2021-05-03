@@ -1,0 +1,11 @@
+#portfolio {
+    .nav-link {
+        color: $lighter-color;
+        border: none;
+        cursor: pointer;
+        &:hover,
+        &.mixitup-control-active {
+            color: $dark-color;
+        }
+    }
+}

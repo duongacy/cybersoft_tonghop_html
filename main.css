@@ -35,6 +35,48 @@
           box-shadow: none;
 }
 
+.section {
+  padding: 3rem 0;
+}
+
+.section__content {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.section__heading {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.section__title {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  color: #333333;
+}
+
+.section__describe {
+  font-size: .9rem;
+  line-height: 1.8rem;
+  font-weight: 400;
+  color: #7E7E7E;
+}
+
+.item .item__title {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 2.3rem;
+  color: #333333;
+}
+
+.item .item__describe {
+  font-size: .9rem;
+  font-weight: 400;
+  line-height: 1.7rem;
+  color: #7E7E7E;
+}
+
 .bg-white {
   background-color: transparent;
   padding: 0;
@@ -160,6 +202,10 @@ header .navbar-collapse {
   font-weight: 500;
 }
 
+#about .about-item {
+  z-index: 3;
+}
+
 #about .experiences {
   position: relative;
   background-size: cover;
@@ -172,18 +218,6 @@ header .navbar-collapse {
   top: 0;
   left: 50%;
   background-color: rgba(0, 0, 0, 0.5);
-}
-
-#about .experiences .experiences__title {
-  font-weight: 400;
-}
-
-#about .experiences .experiences__right {
-  z-index: 3;
-}
-
-#about .experiences .describe {
-  line-height: 2rem;
 }
 
 #about .experiences .progress {
@@ -208,7 +242,7 @@ header .navbar-collapse {
 #about .experiences .progress-value {
   position: absolute;
   top: -1.5rem;
-  left: 100%;
+  right: 0;
   color: #fff;
   background-color: #A9A8A8;
   padding: 0 0.5rem;
@@ -225,6 +259,16 @@ header .navbar-collapse {
   border-left: 3px solid transparent;
   border-right: 3px solid transparent;
   border-top: 6px solid #A9A8A8;
+}
+
+#portfolio .nav-link {
+  color: #A9A8A8;
+  border: none;
+  cursor: pointer;
+}
+
+#portfolio .nav-link:hover, #portfolio .nav-link.mixitup-control-active {
+  color: #333333;
 }
 
 #team .team__item {
