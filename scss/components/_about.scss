@@ -13,9 +13,9 @@
             top: -30px;
             left: 30px;
             position: absolute;
-            box-shadow: 0 0 0 10px #fff;
+            box-shadow: 0 0 0 10px $white-color;
             background-color: $dark-color;
-            color: #fff;
+            color: $white-color;
             border-radius: 0.3rem;
             display: flex;
             justify-content: center;
@@ -31,9 +31,9 @@
     .feature-title {
         font-weight: 500;
     }
-.about-item{
-    z-index: 3;
-}
+    .about-item {
+        z-index: 3;
+    }
     .experiences {
         position: relative;
         .dark-overlay {
@@ -42,7 +42,7 @@
             height: 100%;
             top: 0;
             left: 50%;
-            background-color: rgba($color: #000, $alpha: 0.5);
+            background-color: rgba($color: $dark-color, $alpha: 0.5);
         }
         background-size: cover;
 
@@ -69,9 +69,9 @@
             background-color: $lighter-color;
             padding: 0 0.5rem;
             border-radius: 999px;
-            &::after{
+            &::after {
                 position: absolute;
-                content: "";
+                content: '';
                 display: block;
                 width: 0;
                 height: 0;
