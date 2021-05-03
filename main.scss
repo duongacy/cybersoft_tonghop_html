@@ -1,0 +1,24 @@
+@import "./scss/base/reset";
+@import "./scss/helper/variable";
+@import "./scss/helper/mixin";
+@import "./scss/helper/typography";
+
+// button
+@import "./scss/components/common/button";
+
+// header
+@import "./scss/components/header";
+
+// pages
+@import "./scss/components/home";
+@import "./scss/components/about";
+@import "./scss/components/blog";
+@import "./scss/components/contact";
+@import "./scss/components/features";
+@import "./scss/components/portfolio";
+@import "./scss/components/price-table";
+@import "./scss/components/services";
+@import "./scss/components/team";
+
+// footer
+@import "./scss/components/footer";

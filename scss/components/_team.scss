@@ -1,0 +1,81 @@
+#team {
+    .team__item {
+        background-size: 100% 100%;
+        position: relative;
+        .item__info {
+            position: absolute;
+            bottom: 1rem;
+            left: 30%;
+            right: 0;
+            padding: 1rem;
+            background-color: rgba($color: #000000, $alpha: 0.6);
+
+            .name {
+                color: $white-color;
+                font-size: 0.9rem;
+                margin: 0;
+            }
+            .role {
+                color: $lighter-color;
+                font-size: 0.8rem;
+                margin: 0;
+            }
+        }
+        .item__overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba($color: $white-color, $alpha: 0.9);
+            border: 1.5rem solid rgba($color: #000000, $alpha: 0.1);
+            z-index: 1;
+            text-align: center;
+            gap: 30%;
+            overflow: hidden;
+            opacity: 0;
+            transition: all .5s;
+            
+            .overlay__content {
+                position: absolute;
+                top: 0;
+                transition: all .5s;
+                width: 100%;
+                padding: 0 1.5rem;
+                font-weight: 400;
+                font-size: .9rem;
+                .overlay__title {
+                    color: $dark-color;
+
+                }
+                .overlay__describe {
+                    color: $lighter-color;
+                    line-height: 2rem;
+                }
+            }
+            .overlay__list-icon {
+                position: absolute;
+                bottom: -10rem;
+                transition: all .5s;
+                width: 100%;
+            }
+            .icon {
+                color: $dark-color;
+                transition: all 0.5s;
+                &:hover {
+                    color: #d6b161;
+                }
+            }
+            &:hover {
+                opacity: 1;
+                .overlay__content {
+                    top: 35%;
+                    transform: translateY(-50%);
+                }
+                .overlay__list-icon {
+                    bottom: 10%;
+                }
+            }
+        }
+    }
+}

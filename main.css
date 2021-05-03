@@ -1,0 +1,324 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --animate-duration: 1s;
+}
+
+.animate__animated {
+  opacity: 0;
+}
+
+* {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.navbar-toggler-custom {
+  padding: 0;
+  border: none;
+}
+
+.navbar-toggler-custom em {
+  width: 20px;
+  height: 3px;
+  margin: 4px 0;
+  background-color: #7E7E7E;
+  display: block;
+}
+
+.navbar-toggler-custom:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.bg-white {
+  background-color: transparent;
+  padding: 0;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.bg-white .navbar-brand img {
+  height: 56px;
+}
+
+header {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  background-color: transparent;
+  padding: 2rem 0;
+}
+
+header #main-navbar .nav-item > .nav-link {
+  text-transform: uppercase;
+  color: #333333;
+  font-size: .8rem;
+  font-weight: 400;
+  white-space: nowrap;
+  padding: .6rem 1rem;
+}
+
+header #main-navbar .nav-item > .nav-link.active, header #main-navbar .nav-item > .nav-link:hover {
+  color: #D6B161;
+}
+
+@media (max-width: 992px) {
+  header #main-navbar .nav-item:last-child > .nav-link {
+    border-bottom: #f0f0f0 solid 1px;
+  }
+  header #main-navbar .nav-link {
+    border-top: #f0f0f0 solid 1px;
+  }
+}
+
+header .navbar-collapse {
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+.home-section .carousel-item {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.home-section .carousel-control-next {
+  cursor: e-resize !important;
+}
+
+.home-section .carousel-control-prev {
+  cursor: w-resize !important;
+}
+
+.home-section .carousel-indicators button {
+  height: .8rem;
+  width: .8rem;
+  border-radius: 50%;
+  border: #fff solid 2px;
+  background-color: transparent;
+}
+
+.home-section .carousel-indicators button.active {
+  background-color: #fff;
+  height: 12px;
+  width: 12px;
+}
+
+.home-section .carousel-item {
+  padding-top: 20rem;
+  padding-bottom: 3rem;
+  min-height: 100vh;
+}
+
+#about .feature-border-box {
+  width: 100%;
+  height: auto;
+  padding: 2rem;
+  border: #A9A8A8 solid 1px;
+  border-radius: 0.4rem;
+  position: relative;
+}
+
+#about .feature-border-box .icon {
+  width: 60px;
+  height: 60px;
+  top: -30px;
+  left: 30px;
+  position: absolute;
+  -webkit-box-shadow: 0 0 0 10px #fff;
+          box-shadow: 0 0 0 10px #fff;
+  background-color: #333333;
+  color: #fff;
+  border-radius: 0.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#about .feature-border-box .icon:hover {
+  background-color: #D6B161;
+}
+
+#about .feature-border-box .feature-content {
+  padding-top: 2rem;
+}
+
+#about .feature-title {
+  font-weight: 500;
+}
+
+#about .experiences {
+  position: relative;
+  background-size: cover;
+}
+
+#about .experiences .dark-overlay {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#about .experiences .experiences__title {
+  font-weight: 400;
+}
+
+#about .experiences .experiences__right {
+  z-index: 3;
+}
+
+#about .experiences .describe {
+  line-height: 2rem;
+}
+
+#about .experiences .progress {
+  overflow: unset;
+  height: 1.5rem;
+  margin-top: 2rem;
+  border-radius: 0;
+}
+
+#about .experiences .progress-bar {
+  position: relative;
+  overflow: unset;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#about .experiences .progress-name {
+  position: absolute;
+  left: 1rem;
+}
+
+#about .experiences .progress-value {
+  position: absolute;
+  top: -1.5rem;
+  left: 100%;
+  color: #fff;
+  background-color: #A9A8A8;
+  padding: 0 0.5rem;
+  border-radius: 999px;
+}
+
+#about .experiences .progress-value::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  left: 40%;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 6px solid #A9A8A8;
+}
+
+#team .team__item {
+  background-size: 100% 100%;
+  position: relative;
+}
+
+#team .team__item .item__info {
+  position: absolute;
+  bottom: 1rem;
+  left: 30%;
+  right: 0;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#team .team__item .item__info .name {
+  color: #fff;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+#team .team__item .item__info .role {
+  color: #A9A8A8;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+#team .team__item .item__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1.5rem solid rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  text-align: center;
+  gap: 30%;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+#team .team__item .item__overlay .overlay__content {
+  position: absolute;
+  top: 0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  width: 100%;
+  padding: 0 1.5rem;
+  font-weight: 400;
+  font-size: .9rem;
+}
+
+#team .team__item .item__overlay .overlay__content .overlay__title {
+  color: #333333;
+}
+
+#team .team__item .item__overlay .overlay__content .overlay__describe {
+  color: #A9A8A8;
+  line-height: 2rem;
+}
+
+#team .team__item .item__overlay .overlay__list-icon {
+  position: absolute;
+  bottom: -10rem;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  width: 100%;
+}
+
+#team .team__item .item__overlay .icon {
+  color: #333333;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#team .team__item .item__overlay .icon:hover {
+  color: #d6b161;
+}
+
+#team .team__item .item__overlay:hover {
+  opacity: 1;
+}
+
+#team .team__item .item__overlay:hover .overlay__content {
+  top: 35%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#team .team__item .item__overlay:hover .overlay__list-icon {
+  bottom: 10%;
+}
+/*# sourceMappingURL=main.css.map */

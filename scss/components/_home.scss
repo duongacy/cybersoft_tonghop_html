@@ -1,0 +1,32 @@
+.home-section {
+    .carousel-item {
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .carousel-control-next {
+        cursor: e-resize !important;
+    }
+    .carousel-control-prev {
+        cursor: w-resize !important;
+    }
+    .carousel-indicators {
+        button {
+            height: .8rem;
+            width: .8rem;
+            border-radius: 50%;
+            border: #fff solid 2px;
+            background-color: transparent;
+            &.active {
+                background-color: #fff;
+                height: 12px;
+                width: 12px;
+            }
+        }
+    }
+    .carousel-item {
+        padding-top: 20rem;
+        padding-bottom: 3rem;
+        min-height: 100vh;
+    }
+}

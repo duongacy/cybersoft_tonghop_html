@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --animate-duration: 1s;
+    // --animate-delay: 100s;
+}
+
+.animate__animated{
+    opacity: 0;
+}

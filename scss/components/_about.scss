@@ -1,0 +1,94 @@
+#about {
+    .feature-border-box {
+        width: 100%;
+        height: auto;
+        padding: 2rem;
+        border: $lighter-color solid 1px;
+        border-radius: 0.4rem;
+        position: relative;
+
+        .icon {
+            width: 60px;
+            height: 60px;
+            top: -30px;
+            left: 30px;
+            position: absolute;
+            box-shadow: 0 0 0 10px #fff;
+            background-color: $dark-color;
+            color: #fff;
+            border-radius: 0.3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover {
+                background-color: $primary-color;
+            }
+        }
+        .feature-content {
+            padding-top: 2rem;
+        }
+    }
+    .feature-title {
+        font-weight: 500;
+    }
+
+    .experiences {
+        position: relative;
+        .dark-overlay {
+            position: absolute;
+            width: 50%;
+            height: 100%;
+            top: 0;
+            left: 50%;
+            background-color: rgba($color: #000, $alpha: 0.5);
+        }
+        background-size: cover;
+        .experiences__title {
+            font-weight: 400;
+        }
+        .experiences__left {
+        }
+        .experiences__right {
+            z-index: 3;
+        }
+        .describe {
+            line-height: 2rem;
+        }
+
+        .progress {
+            overflow: unset;
+            height: 1.5rem;
+            margin-top: 2rem;
+            border-radius: 0;
+        }
+        .progress-bar {
+            position: relative;
+            overflow: unset;
+            transition: all 1s;
+        }
+        .progress-name {
+            position: absolute;
+            left: 1rem;
+        }
+        .progress-value {
+            position: absolute;
+            top: -1.5rem;
+            left: 100%;
+            color: $white-color;
+            background-color: $lighter-color;
+            padding: 0 0.5rem;
+            border-radius: 999px;
+            &::after{
+                position: absolute;
+                content: "";
+                display: block;
+                width: 0;
+                height: 0;
+                left: 40%;
+                border-left: 3px solid transparent;
+                border-right: 3px solid transparent;
+                border-top: 6px solid $lighter-color;
+            }
+        }
+    }
+}
