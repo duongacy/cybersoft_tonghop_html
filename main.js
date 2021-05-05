@@ -9,7 +9,10 @@ window.onload = function () {
         switchMenu();
         addAboutAnimate();
         addProgressAnimate();
+        activeMenuLinkRecent();
     })
+    activeMenuLink();
+    activeMenuLinkRecent();
 }
 
 function switchMenu() {
@@ -27,7 +30,7 @@ function addAboutAnimate() {
     var animateElements = document.querySelectorAll(".animate__animated");
     animateElements.forEach(function (item, index) {
         var itemBoundingBox = item.getBoundingClientRect();
-        if (itemBoundingBox.bottom <= window.innerHeight) {
+        if (itemBoundingBox.top <= window.innerHeight/1.5) {
             item.classList.remove(item.getAttribute("animateClass"));
             item.classList.add(item.getAttribute("animateClass"));
             item.style.opacity = 1;
@@ -41,6 +44,36 @@ function addProgressAnimate() {
         var itemBoundingBox = item.getBoundingClientRect();
         if (itemBoundingBox.bottom <= window.innerHeight) {
             item.style.width = item.getAttribute("aria-valuenow") + "%";
+        }
+    })
+}
+
+function deactiveMenuLink() {
+    var listLink = document.querySelectorAll("#navbarSupportedContent .nav-link");
+    listLink.forEach(function (item, key) {
+        item.classList.remove("active");
+    })
+}
+
+function activeMenuLink() {
+    var listLink = document.querySelectorAll("#navbarSupportedContent .nav-link");
+    listLink.forEach(function (item, key) {
+        item.addEventListener("click", function () {
+            deactiveMenuLink();
+            item.classList.add("active");
+        })
+    })
+}
+
+function activeMenuLinkRecent() {
+    var linkRecent;
+    var listSection = document.querySelectorAll("section");
+    listSection.forEach(function (item, key) {
+        var bounding = item.getBoundingClientRect();
+        if (bounding.top < window.innerHeight/2 && bounding.top >= 0) {
+            linkRecent = item.getAttribute("id");
+            deactiveMenuLink();
+            document.querySelector("a[href='#"+linkRecent+"']").classList.add("active");
         }
     })
 }

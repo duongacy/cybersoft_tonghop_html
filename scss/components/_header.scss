@@ -22,10 +22,7 @@ header {
             font-weight: 400;
             white-space: nowrap;
             padding: .6rem 1rem;
-            
-            
-            &.active,
-            &:hover {
+            &:hover, &.active {
                 color: $primary-color;
             }
         }

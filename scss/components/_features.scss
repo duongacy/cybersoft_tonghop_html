@@ -1,0 +1,30 @@
+#features {
+    .feature-statistic {
+        padding: 7rem 0;
+        background-repeat: repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
+    .fun-factor{
+        display: flex;
+        align-items: center;
+        .icon{
+            display: flex;
+            align-items: center;
+        }
+        .icon::after{
+            content:"";
+            display: inline-block;
+            height: 5rem;
+            width: 1px;
+            background-color: #fff;
+            transform: rotate(30deg);
+            margin: 0 2rem;
+        }
+        .fun-info{
+            text-transform: uppercase;
+            font-weight: 300;
+        }
+    }
+}

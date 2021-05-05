@@ -1,0 +1,56 @@
+#services {
+    .services__item {
+        border: $lighter-color solid 1px;
+        padding: 2rem;
+        margin-bottom: -1px;
+        margin-left: -1px;
+        text-align: center;
+        i {
+            padding-bottom: 1rem;
+        }
+
+        &:hover {
+            background-color: $dark-color;
+            border-color: transparent;
+            .item__title {
+                color: $white-color;
+            }
+            i {
+                color: $primary-color;
+            }
+        }
+    }
+    .second-content {
+        background-repeat: repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        .second-content__item {
+            background-color: transparent;
+            .item__title {
+                color: $primary-color;
+                text-transform: uppercase;
+                font-weight: 300;
+            }
+            .item__describe {
+                font-style: italic;
+                font-weight: 300;
+            }
+            .get-price-button {
+                background-color: rgba($color: $lighter-color, $alpha: 0.5);
+                color: $white-color;
+                padding: 0.5rem 1.5rem;
+                border: none;
+                text-transform: uppercase;
+                border-radius: 0.3rem;
+                font-size: 0.8rem;
+                font-weight: 300;
+                letter-spacing: 0.15rem;
+                transition: all 0.5s;
+                &:hover {
+                    background-color: $primary-color;
+                }
+            }
+        }
+    }
+}
