@@ -74,22 +74,6 @@
                 color: $primary-color;
             }
         }
-        .purchase__button{
-            letter-spacing: .15rem;
-            border: none;
-            outline: none;
-            border-radius: .2rem;
-            padding: .8rem 2rem;
-            font-size: 1rem;
-            color: #fff;
-            background-color: gray;
-            text-transform: uppercase;
-            font-weight: 400;
-            white-space: nowrap;
-            &:hover{
-                background-color: $primary-color;
-            }
-        }
     }
     
 }

@@ -5,6 +5,9 @@
         margin-bottom: -1px;
         margin-left: -1px;
         text-align: center;
+        display: flex;
+        flex-direction:  column;
+
         i {
             padding-bottom: 1rem;
         }
@@ -12,7 +15,7 @@
         &:hover {
             background-color: $dark-color;
             border-color: transparent;
-            .item__title {
+            .services__item__title {
                 color: $white-color;
             }
             i {
