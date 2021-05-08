@@ -1,0 +1,15 @@
+#contact {
+    .contact-bg {
+        background-position: 50% 50%;
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+}
+.contact-form__left, .contact-form__right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: .5rem;
+}

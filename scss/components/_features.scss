@@ -1,0 +1,32 @@
+#features {
+    .index{
+        color: $lighter-color;
+    }
+    .feature-statistic {
+        padding: 6rem 0;
+        background-repeat: repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
+    .fun-factor{
+        display: flex;
+        align-items: center;
+        .icon{
+            align-self:flex-start;
+            margin-top: 1rem;
+        }
+        .shoet{
+            height: 5rem;
+            width: 1px;
+            background-color: #fff;
+            transform: rotate(30deg);
+            margin: 0 2rem;
+        }
+        
+        .fun-info{
+            text-transform: uppercase;
+            font-weight: 300;
+        }
+    }
+}

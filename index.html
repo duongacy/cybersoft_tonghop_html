@@ -32,6 +32,12 @@
             crossorigin="anonymous"
         />
         <link rel="stylesheet" href="./lib/mixitup/css/style.css" />
+
+        <link rel="stylesheet" href="./lib/slick-carousel/css/slick.css" />
+        <link
+            rel="stylesheet"
+            href="./lib/slick-carousel/css/slick-theme.css"
+        />
         <link rel="stylesheet" href="./main.css" />
     </head>
     <body>
@@ -79,25 +85,35 @@
                                     <a class="nav-link" href="#about">about</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">team</a>
+                                    <a class="nav-link" href="#team">team</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">portfolio</a>
+                                    <a class="nav-link" href="#portfolio"
+                                        >portfolio</a
+                                    >
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">services</a>
+                                    <a class="nav-link" href="#services"
+                                        >services</a
+                                    >
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">features</a>
+                                    <a class="nav-link" href="#features"
+                                        >features</a
+                                    >
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">blog</a>
+                                    <a class="nav-link" href="#blog">blog</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">price table</a>
+                                    <a class="nav-link" href="#price-table"
+                                        >price table</a
+                                    >
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">contact</a>
+                                    <a class="nav-link" href="#contact"
+                                        >contact</a
+                                    >
                                 </li>
                             </ul>
                         </div>
@@ -105,7 +121,7 @@
                 </nav>
             </div>
         </header>
-        <section class="home-section" id="home">
+        <div class="home-section" id="home">
             <div
                 id="carouselExampleIndicators"
                 class="carousel slide carousel-fade"
@@ -142,11 +158,11 @@
                             <div
                                 class="px-4 animate__animated animate__fadeInDown"
                             >
-                                <div class="text-dark">
-                                    <h4>HI THERE !</h4>
-                                    <h2>WE ARE MASSIVE</h2>
+                                <div class="lsp-2">
+                                    <p class="h5">HI THERE !</p>
+                                    <p class="h2">WE ARE MASSIVE</p>
                                 </div>
-                                <div class="text-secondary mt-4">
+                                <div class="text-muted mt-4">
                                     <p>
                                         Integer nec nulla bibendum, venenatis
                                         elit vel, vulputate nulla. Quisque
@@ -169,11 +185,11 @@
                                 <div
                                     class="px-4 animate__animated animate__fadeInDown"
                                 >
-                                    <div class="text-dark">
-                                        <h4>WE'VE LOTS OF !</h4>
-                                        <h2>REUSABLE COMPONENTS</h2>
+                                    <div class="lsp-2">
+                                        <p class="h5">WE'VE LOTS OF !</p>
+                                        <p class="h2">REUSABLE COMPONENTS</p>
                                     </div>
-                                    <div class="text-secondary mt-4">
+                                    <div class="text-muted mt-4">
                                         <p>
                                             Vulputate nulla. Quisque lacinia
                                             nisi erat,
@@ -195,8 +211,11 @@
                             <div
                                 class="px-4 animate__animated animate__fadeInDown"
                             >
-                                <h4>WHY CHOOSE MASSIVE ?</h4>
-                                <h2>UNLIMITED POSSIBILITIES</h2>
+                                <div class="lsp-2">
+                                    <p class="h5">WHY CHOOSE MASSIVE ?</p>
+                                    <p class="h2">UNLIMITED POSSIBILITIES</p>
+                                </div>
+
                                 <div class="mt-4">
                                     <p>
                                         Integer nec nulla bibendum, venenatis
@@ -225,20 +244,20 @@
                     data-bs-slide="next"
                 ></button>
             </div>
-        </section>
+        </div>
 
-        <section class="section" id="about">
-            <div class="container section__content">
+        <section id="about">
+            <div class="container">
                 <div class="section__heading">
-                    <p class="section__title">WE LOVE TO DESIGN</p>
-                    <p class="section__describe">
+                    <p class="h3">WE LOVE TO DESIGN</p>
+                    <p class="text-muted">
                         Lid est laborum dolo rumes fugats untras. Etharums ser
                         quidem rerum facilis dolores nemis omnis fugats vitaes
                         nemo minima rerums unsers sadips amets.
                     </p>
                 </div>
-                <div class="row g-5">
-                    <div class="col-lg-4 item">
+                <div class="row section__content">
+                    <div class="col-lg-4">
                         <div
                             class="feature-border-box animate__animated"
                             animateClass="animate__fadeInLeft"
@@ -247,8 +266,8 @@
                                 <i class="far fa-edit fa-2x"></i>
                             </div>
                             <div class="feature-content">
-                                <p class="item__title">MODERN DESIGN</p>
-                                <p class="item__describe">
+                                <p class="h5">MODERN DESIGN</p>
+                                <p class="text-muted">
                                     Fringilla augue at maximus vestibulum. Nam
                                     pulvinar vitae neque et porttitor. Praesent
                                     sed nisi eleifend.
@@ -256,7 +275,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 item">
+                    <div class="col-lg-4">
                         <div
                             class="feature-border-box animate__animated"
                             animateClass="animate__fadeInUp"
@@ -265,8 +284,8 @@
                                 <i class="fas fa-tablet-alt fa-2x"></i>
                             </div>
                             <div class="feature-content">
-                                <p class="item__title">BOOTSTRAP</p>
-                                <p class="item__describe">
+                                <p class="h5">BOOTSTRAP</p>
+                                <p class="text-muted">
                                     Fringilla augue at maximus vestibulum. Nam
                                     pulvinar vitae neque et porttitor. Praesent
                                     sed nisi eleifend.
@@ -274,7 +293,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 item">
+                    <div class="col-lg-4">
                         <div
                             class="feature-border-box animate__animated"
                             animateClass="animate__fadeInRight"
@@ -283,8 +302,8 @@
                                 <i class="fas fa-glass-martini-alt fa-2x"></i>
                             </div>
                             <div class="feature-content">
-                                <p class="item__title">CLEAN CODE</p>
-                                <p class="item__describe">
+                                <p class="h5">CLEAN CODE</p>
+                                <p class="text-muted">
                                     Fringilla augue at maximus vestibulum. Nam
                                     pulvinar vitae neque et porttitor. Praesent
                                     sed nisi eleifend.
@@ -295,24 +314,20 @@
                 </div>
             </div>
             <div
-                class="experiences py-5"
+                class="experiences section__content"
                 style="background-image: url('./images/4.jpg')"
             >
                 <div class="dark-overlay d-none d-lg-block"></div>
-                <div class="container py-5">
-                    <div class="row m-0">
-                        <div class="col-lg-6 d-flex align-items-center px-5">
-                            <p
-                                class="section__title text-white w-100 text-lg-end"
-                            >
+                <div class="container padding-y-4">
+                    <div class="row overflow-hidden g-4">
+                        <div class="col-lg-6 d-flex align-items-center pe-lg-5">
+                            <p class="text-white w-100 text-lg-end h3">
                                 SKILLS AND EXPERIENCE
                             </p>
                         </div>
-                        <div class="col-lg-6 item about-item px-5">
-                            <p class="item__title text-white">
-                                WE ARE DAMN EXPART !
-                            </p>
-                            <p class="item__describe text-white">
+                        <div class="col-lg-6 about-item ps-lg-5">
+                            <p class="text-white h4">WE ARE DAMN EXPART !</p>
+                            <p class="text-white">
                                 We are a team of multi-skilled and curious
                                 digital specialists who are always up for a
                                 massive challenge forever. We are a team of
@@ -363,119 +378,120 @@
             </div>
         </section>
 
-        <section class="container section" id="team">
-            <div class="section__heading">
-                <p class="section__title">OUR TEAM</p>
-                <p class="section__describe">
-                    Lid est laborum dolo rumes fugats untras. Etharums ser
-                    quidem rerum facilis dolores nemis omnis fugats vitaes nemo
-                    minima rerums unsers sadips amets.
-                </p>
-            </div>
+        <section id="team">
+            <div class="container">
+                <div class="section__heading">
+                    <p class="h3">OUR TEAM</p>
+                    <p class="text-muted">
+                        Lid est laborum dolo rumes fugats untras. Etharums ser
+                        quidem rerum facilis dolores nemis omnis fugats vitaes
+                        nemo minima rerums unsers sadips amets.
+                    </p>
+                </div>
+                <div class="row section__content">
+                    <div
+                        class="col-lg-4 animate__animated"
+                        animateClass="animate__fadeInLeft"
+                    >
+                        <div class="team__item">
+                            <img src="./images/t-1.jpg" class="w-100" />
+                            <div class="item__overlay">
+                                <div class="overlay__content">
+                                    <p class="h5">I LOVE TO DESIGN</p>
+                                    <p class="text-muted">
+                                        We are a team of multi-skilled and
+                                        curious digital specialists who are
+                                        always up for a challenge and learning
+                                        as fast as digital is changing.
+                                    </p>
+                                </div>
 
-            <div class="row gx-5 py-4">
-                <div
-                    class="col-lg-4 animate__animated"
-                    animateClass="animate__fadeInLeft"
-                >
-                    <div class="team__item">
-                        <img src="./images/t-1.jpg" class="w-100" />
-                        <div class="item__overlay">
-                            <div class="overlay__content">
-                                <p class="overlay__title">I LOVE TO DESIGN</p>
-                                <p class="overlay__describe">
-                                    We are a team of multi-skilled and curious
-                                    digital specialists who are always up for a
-                                    challenge and learning as fast as digital is
-                                    changing.
-                                </p>
+                                <div class="overlay__list-icon">
+                                    <a href="" class="icon mx-3"
+                                        ><i class="fab fa-facebook-f"></i
+                                    ></a>
+                                    <a href="" class="icon mx-3"
+                                        ><i class="fab fa-twitter"></i
+                                    ></a>
+                                    <a href="" class="icon mx-3"
+                                        ><i class="fab fa-google-plus-g"></i
+                                    ></a>
+                                </div>
                             </div>
-
-                            <div class="overlay__list-icon">
-                                <a href="" class="icon mx-3"
-                                    ><i class="fab fa-facebook-f"></i
-                                ></a>
-                                <a href="" class="icon mx-3"
-                                    ><i class="fab fa-twitter"></i
-                                ></a>
-                                <a href="" class="icon mx-3"
-                                    ><i class="fab fa-google-plus-g"></i
-                                ></a>
+                            <div class="item__info text-end">
+                                <p class="name">MARTIN SMITH</p>
+                                <p class="role">FOUNDER & CEO</p>
                             </div>
-                        </div>
-                        <div class="item__info text-end">
-                            <p class="name">MARTIN SMITH</p>
-                            <p class="role">FOUNDER & CEO</p>
                         </div>
                     </div>
-                </div>
-                <div
-                    class="col-lg-4 animate__animated"
-                    animateClass="animate__fadeInUp"
-                >
-                    <div class="team__item">
-                        <img src="./images/t-2.jpg" class="w-100" />
-                        <div class="item__overlay">
-                            <div class="overlay__content">
-                                <p class="overlay__title">HELLO THERE..</p>
-                                <p class="overlay__describe">
-                                    We are a team of multi-skilled and curious
-                                    digital specialists who are always up for a
-                                    challenge and learning as fast as digital is
-                                    changing.
-                                </p>
-                            </div>
+                    <div
+                        class="col-lg-4 animate__animated"
+                        animateClass="animate__fadeInUp"
+                    >
+                        <div class="team__item">
+                            <img src="./images/t-2.jpg" class="w-100" />
+                            <div class="item__overlay">
+                                <div class="overlay__content">
+                                    <p class="h5">HELLO THERE..</p>
+                                    <p class="text-muted">
+                                        We are a team of multi-skilled and
+                                        curious digital specialists who are
+                                        always up for a challenge and learning
+                                        as fast as digital is changing.
+                                    </p>
+                                </div>
 
-                            <div class="overlay__list-icon">
-                                <a href="" class="icon mx-3"
-                                    ><i class="fab fa-facebook-f"></i
-                                ></a>
-                                <a href="" class="icon mx-3"
-                                    ><i class="fab fa-twitter"></i
-                                ></a>
-                                <a href="" class="icon mx-3"
-                                    ><i class="fab fa-google-plus-g"></i
-                                ></a>
+                                <div class="overlay__list-icon">
+                                    <a href="" class="icon mx-3"
+                                        ><i class="fab fa-facebook-f"></i
+                                    ></a>
+                                    <a href="" class="icon mx-3"
+                                        ><i class="fab fa-twitter"></i
+                                    ></a>
+                                    <a href="" class="icon mx-3"
+                                        ><i class="fab fa-google-plus-g"></i
+                                    ></a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="item__info text-end">
-                            <p class="name">Franklin Harbet</p>
-                            <p class="role">HR MANAGER</p>
+                            <div class="item__info text-end">
+                                <p class="name">FRANKLIN HARBERT</p>
+                                <p class="role">HR MANAGER</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div
-                    class="col-lg-4 animate__animated"
-                    animateClass="animate__fadeInRight"
-                >
-                    <div class="team__item">
-                        <img src="./images/t-3.jpg" class="w-100" />
-                        <div class="item__overlay">
-                            <div class="overlay__content">
-                                <p class="overlay__title">ITS AWESOME</p>
-                                <p class="overlay__describe">
-                                    We are a team of multi-skilled and curious
-                                    digital specialists who are always up for a
-                                    challenge and learning as fast as digital is
-                                    changing.
-                                </p>
-                            </div>
+                    <div
+                        class="col-lg-4 animate__animated"
+                        animateClass="animate__fadeInRight"
+                    >
+                        <div class="team__item">
+                            <img src="./images/t-3.jpg" class="w-100" />
+                            <div class="item__overlay">
+                                <div class="overlay__content">
+                                    <p class="h5">ITS AWESOME</p>
+                                    <p class="text-muted">
+                                        We are a team of multi-skilled and
+                                        curious digital specialists who are
+                                        always up for a challenge and learning
+                                        as fast as digital is changing.
+                                    </p>
+                                </div>
 
-                            <div class="overlay__list-icon">
-                                <a href="" class="icon mx-3"
-                                    ><i class="fab fa-facebook-f"></i
-                                ></a>
-                                <a href="" class="icon mx-3"
-                                    ><i class="fab fa-twitter"></i
-                                ></a>
-                                <a href="" class="icon mx-3"
-                                    ><i class="fab fa-google-plus-g"></i
-                                ></a>
+                                <div class="overlay__list-icon">
+                                    <a href="" class="icon mx-3"
+                                        ><i class="fab fa-facebook-f"></i
+                                    ></a>
+                                    <a href="" class="icon mx-3"
+                                        ><i class="fab fa-twitter"></i
+                                    ></a>
+                                    <a href="" class="icon mx-3"
+                                        ><i class="fab fa-google-plus-g"></i
+                                    ></a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="item__info text-end">
-                            <p class="name">LINDA ANDERSON</p>
-                            <p class="role">MARKETING MANAGER</p>
+                            <div class="item__info text-end">
+                                <p class="name">LINDA ANDERSON</p>
+                                <p class="role">MARKETING MANAGER</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -483,123 +499,1050 @@
         </section>
 
         <section id="portfolio">
-            <div class="container py-5">
+            <div class="container-fluid">
                 <div class="section__heading">
-                    <div class="section__title">PORTFOLIO</div>
-                    <div class="section__describe">Lid est laborum dolo rumes fugats untras. Etharums ser
-                        quidem rerum facilis dolores nemis omnis fugats vitaes nemo
-                        minima rerums unsers sadips amets.</div>
+                    <div class="h2">PORTFOLIO</div>
+                    <div class="text-muted">
+                        Lid est laborum dolo rumes fugats untras. Etharums ser
+                        quidem rerum facilis dolores nemis omnis fugats vitaes
+                        nemo minima rerums unsers sadips amets.
+                    </div>
                 </div>
-                <ul class="nav justify-content-center py-3">
-                    <li class="nav-item">
+                <div class="section__content">
+                    <ul class="nav justify-content-center padding-y-3">
+                        <li class="nav-item">
+                            <a
+                                class="nav-link active"
+                                data-filter="all"
+                                aria-current="page"
+                                >ALL</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-filter=".printing"
+                                >PRINTING</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-filter=".web">WEB</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-filter=".illutration"
+                                >ILLUTRATION</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-filter=".media">MEDIA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-filter=".crafts">CRAFTS</a>
+                        </li>
+                    </ul>
+
+                    <div class="row container1 overflow-hidden g-3">
+                        <div class="col-sm-6 col-md-4 col-lg-3 mix printing">
+                            <div class="portfolio__item">
+                                <div class="portfolio-overlay">
+                                    <a class="lightbox-view-icon"
+                                        ><i class="fas fa-search fa-2x"></i
+                                    ></a>
+                                    <div class="text-center">
+                                        <p class="lightbox-view">
+                                            LIGHTBOX VIEW
+                                        </p>
+                                        <a class="category" href="#"
+                                            >CATEGORY</a
+                                        >
+                                    </div>
+                                </div>
+                                <img
+                                    src="./images/01.jpg"
+                                    class="w-100"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 mix web crafts">
+                            <div class="portfolio__item">
+                                <img
+                                    src="./images/02.jpg"
+                                    class="w-100"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                        <div
+                            class="col-sm-6 col-md-4 col-lg-3 mix web illutration crafts"
+                        >
+                            <div class="portfolio__item">
+                                <img
+                                    src="./images/03.jpg"
+                                    class="w-100"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                        <div
+                            class="col-sm-6 col-md-4 col-lg-3 mix illutration media printing"
+                        >
+                            <div class="portfolio__item">
+                                <img
+                                    src="./images/04.jpg"
+                                    class="w-100"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                        <div
+                            class="col-sm-6 col-md-4 col-lg-3 mix web media printing media crafts"
+                        >
+                            <div class="portfolio__item">
+                                <img
+                                    src="./images/05.jpg"
+                                    class="w-100"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                        <div
+                            class="col-sm-6 col-md-4 col-lg-3 mix illutration media crafts"
+                        >
+                            <div class="portfolio__item">
+                                <img
+                                    src="./images/06.jpg"
+                                    class="w-100"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                        <div
+                            class="col-sm-6 col-md-4 col-lg-3 mix illutration media web printing"
+                        >
+                            <div class="portfolio__item">
+                                <img
+                                    src="./images/07.jpg"
+                                    class="w-100"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                        <div
+                            class="col-sm-6 col-md-4 col-lg-3 mix media crafts web printing"
+                        >
+                            <div class="portfolio__item">
+                                <img
+                                    src="./images/08.jpg"
+                                    class="w-100"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-dark text-white purchase">
+                <div class="container section__content">
+                    <div class="row overflow-hidden g-4">
+                        <div class="col-md-8">
+                            <p class="m-0 lh-lg">
+                                ARE YOU IMPRESSED WITH OUR CREATIVE WORK?
+                            </p>
+                            <p class="m-0 fs-3">
+                                START
+                                <span class="text--primary"
+                                    >BUILDING YOUR PROJECT</span
+                                >
+                                WITH MASSIVE
+                            </p>
+                        </div>
+                        <div class="col-md-4 d-flex align-items-end">
+                            <div class="mb-2">
+                                <button
+                                    class="massive-button-lg secondary-primary-button rounded-1 text-uppercase"
+                                >
+                                    purchase now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="" id="services">
+            <div class="container">
+                <div class="section__heading">
+                    <div class="h2">SERVICES</div>
+                    <div class="text-muted">
+                        Lid est laborum dolo rumes fugats untras. Etharums ser
+                        quidem rerum facilis dolores nemis omnis fugats vitaes
+                        nemo minima rerums unsers sadips amets.
+                    </div>
+                </div>
+                <div class="row section__content px-2">
+                    <div
+                        class="col-md-4 services__item animate__animated"
+                        animateClass="animate__zoomIn"
+                    >
+                        <i class="far fa-lightbulb fa-3x"></i>
+                        <p class="h5 services__item__title">CREATIVE DESIGN</p>
+                        <p class="text-muted services__item__describe">
+                            Fringilla augue at maximus vestibulum. Nam pulvinar
+                            vitae neque et porttitor. Praesent sed nisi
+                            eleifend.
+                        </p>
+                    </div>
+                    <div
+                        class="col-md-4 services__item animate__animated"
+                        animateClass="animate__zoomIn"
+                    >
+                        <i class="far fa-window-maximize fa-3x"></i>
+                        <p class="h5 services__item__title">
+                            PROFESSIONAL CODE
+                        </p>
+                        <p class="text-muted services__item__describe">
+                            Fringilla augue at maximus vestibulum. Nam pulvinar
+                            vitae neque et porttitor. Praesent sed nisi
+                            eleifend.
+                        </p>
+                    </div>
+                    <div
+                        class="col-md-4 services__item animate__animated"
+                        animateClass="animate__zoomIn"
+                    >
+                        <i class="fas fa-laptop fa-3x"></i>
+                        <p class="h5 services__item__title">EASY CUSTOMIZE</p>
+                        <p class="text-muted services__item__describe">
+                            Fringilla augue at maximus vestibulum. Nam pulvinar
+                            vitae neque et porttitor. Praesent sed nisi
+                            eleifend.
+                        </p>
+                    </div>
+                    <div
+                        class="col-md-4 services__item animate__animated"
+                        animateClass="animate__zoomIn"
+                    >
+                        <i class="fas fa-cogs fa-3x"></i>
+                        <p class="h5 services__item__title">24/7 SUPPORT</p>
+                        <p class="text-muted services__item__describe">
+                            Fringilla augue at maximus vestibulum. Nam pulvinar
+                            vitae neque et porttitor. Praesent sed nisi
+                            eleifend.
+                        </p>
+                    </div>
+                    <div
+                        class="col-md-4 services__item animate__animated"
+                        animateClass="animate__zoomIn"
+                    >
+                        <i class="fas fa-pencil-ruler fa-3x"></i>
+                        <p class="h5 services__item__title">BOOTSTRAP</p>
+                        <p class="text-muted services__item__describe">
+                            Fringilla augue at maximus vestibulum. Nam pulvinar
+                            vitae neque et porttitor. Praesent sed nisi
+                            eleifend.
+                        </p>
+                    </div>
+                    <div
+                        class="col-md-4 services__item animate__animated"
+                        animateClass="animate__zoomIn"
+                    >
+                        <i class="fas fa-pen-fancy fa-3x"></i>
+                        <p class="h5 services__item__title">CLEAN CODE</p>
+                        <p class="text-muted services__item__describe">
+                            Fringilla augue at maximus vestibulum. Nam pulvinar
+                            vitae neque et porttitor. Praesent sed nisi
+                            eleifend.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div
+                id="serviceCarousel"
+                class="carousel slide"
+                data-bs-ride="carousel"
+            >
+                <div class="carousel-indicators">
+                    <button
+                        type="button"
+                        data-bs-target="#serviceCarousel"
+                        data-bs-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                        aria-label="Slide 1"
+                    ></button>
+                    <button
+                        type="button"
+                        data-bs-target="#serviceCarousel"
+                        data-bs-slide-to="1"
+                        aria-label="Slide 2"
+                    ></button>
+                    <button
+                        type="button"
+                        data-bs-target="#serviceCarousel"
+                        data-bs-slide-to="2"
+                        aria-label="Slide 3"
+                    ></button>
+                </div>
+                <div
+                    class="carousel-inner"
+                    style="background-image: url('./images/14.jpg')"
+                >
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <div class="row gx-5">
+                                <div class="col-md-4 carousel-item__image">
+                                    <img
+                                        src="./images/obj-2.png"
+                                        class="w-100"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="col-md-8 carousel-item__content">
+                                    <h5 class="text--primary">
+                                        REALLY GOOD AT WEB DESIGNING
+                                    </h5>
+                                    <p class="text-white">
+                                        We are a team of multi-skilled and
+                                        curious digital specialists who are
+                                        always up for a challenge and learning
+                                        as fast as digital is changing. We are a
+                                        team of multi-skilled and curious
+                                        digital specialists who are always up
+                                        for a challenge. Multi-skilled and
+                                        curious digital specialists.
+                                    </p>
+                                    <div>
+                                        <button
+                                            class="massive-button secondary-primary-button rounded-1"
+                                        >
+                                            GET PRICE
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row gx-5">
+                                <div class="col-md-4 carousel-item__image">
+                                    <img
+                                        src="./images/obj-1.png"
+                                        class="w-100"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="col-md-8 carousel-item__content">
+                                    <h5 class="text--primary">
+                                        REALLY GOOD AT WEB DESIGNING
+                                    </h5>
+                                    <p class="text-white">
+                                        We are a team of multi-skilled and
+                                        curious digital specialists who are
+                                        always up for a challenge and learning
+                                        as fast as digital is changing. We are a
+                                        team of multi-skilled and curious
+                                        digital specialists who are always up
+                                        for a challenge. Multi-skilled and
+                                        curious digital specialists.
+                                    </p>
+                                    <div>
+                                        <button
+                                            class="massive-button secondary-primary-button rounded-1"
+                                        >
+                                            GET PRICE
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row gx-5">
+                                <div class="col-md-4 carousel-item__image">
+                                    <img
+                                        src="./images/obj-3.png"
+                                        class="w-100"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="col-md-8 carousel-item__content">
+                                    <h5 class="text--primary">
+                                        REALLY GOOD AT WEB DESIGNING
+                                    </h5>
+                                    <p class="text-white">
+                                        We are a team of multi-skilled and
+                                        curious digital specialists who are
+                                        always up for a challenge and learning
+                                        as fast as digital is changing. We are a
+                                        team of multi-skilled and curious
+                                        digital specialists who are always up
+                                        for a challenge. Multi-skilled and
+                                        curious digital specialists.
+                                    </p>
+                                    <div>
+                                        <button
+                                            class="massive-button secondary-primary-button rounded-1"
+                                        >
+                                            GET PRICE
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="" id="features">
+            <div class="container">
+                <div class="section__heading">
+                    <div class="h2">CORE FEATURE</div>
+                    <div class="text-muted">
+                        Phasellus fringilla suscipit risus nec eleifend.
+                        Pellentesque eu quam sem, ac malesuada leo sem quam
+                        pellente. Awesome sliders give you the opportunity to
+                        showcase your content.
+                    </div>
+                </div>
+                <div class="row section__content">
+                    <div
+                        class="col-lg-6 animate__animated"
+                        animateClass="animate__fadeInLeft"
+                    >
+                        <img src="./images/tab-1.png" class="w-100" alt="" />
+                    </div>
+                    <div class="col-lg-6 row m-0">
+                        <div
+                            class="features__item animate__animated"
+                            animateClass="animate__fadeInRight"
+                        >
+                            <p class="display-6 index">01</p>
+                            <p class="h5">MEGA MENU</p>
+                            <p class="text-muted">
+                                Fringilla augue at maximus vestibulum. Nam
+                                pulvinar vitae neque et porttitor. Praesent sed
+                                nisi eleifend. Pellentesque eu quam sem, ac
+                                malesuada leo sem quam pellente.
+                            </p>
+                        </div>
+                        <div
+                            class="features__item animate__animated"
+                            animateClass="animate__fadeInRight"
+                        >
+                            <p class="display-6 index">02</p>
+                            <p class="h5">UNLIMITED PORTFOLIO GRID</p>
+                            <p class="text-muted">
+                                Pellentesque eu quam sem, ac malesuada leo sem
+                                quam pellente. Fringilla augue at maximus
+                                vestibulum. Nam pulvinar vitae neque et
+                                porttitor. Praesent sed nisi eleifend.
+                            </p>
+                        </div>
+                        <div
+                            class="features__item animate__animated"
+                            animateClass="animate__fadeInRight"
+                        >
+                            <p class="display-6 index">03</p>
+                            <p class="h5">HUGE SHORTCODE</p>
+                            <p class="text-muted">
+                                Augue at maximus Pellentesque eu quam sem, ac
+                                malesuada leo sem quam pellente. vestibulum. Nam
+                                pulvinar vitae neque et porttitor. Praesent sed
+                                nisi eleifend.
+                            </p>
+                        </div>
+                        <div
+                            class="features__item animate__animated py-2"
+                            animateClass="animate__fadeInRight"
+                        >
+                            <button
+                                class="massive-button-lg dark-primary-button rounded-1 me-2"
+                            >
+                                PURCHASE NOW
+                            </button>
+                            <button
+                                class="massive-button-lg white-dark-button rounded-1"
+                            >
+                                VIEW ALL
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="feature-statistic"
+                style="background-image: url('./images/7.jpg')"
+            >
+                <div class="container text-white">
+                    <div class="row m-0 g-5">
+                        <div class="col-md-4">
+                            <div class="fun-factor">
+                                <div class="icon">
+                                    <i class="far fa-smile fa-2x"></i>
+                                </div>
+                                <span class="shoet"></span>
+                                <div class="fun-info">
+                                    <p class="timer display-5 counter">36</p>
+                                    <p>CLIENTS handled</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="fun-factor">
+                                <div class="icon">
+                                    <i class="far fa-flag fa-2x"></i>
+                                </div>
+                                <span class="shoet"></span>
+                                <div class="fun-info">
+                                    <p class="timer display-5 counter">38</p>
+                                    <p>PROJECT COMPLETED</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="fun-factor">
+                                <div class="icon">
+                                    <i class="fas fa-award fa-2x"></i>
+                                </div>
+                                <span class="shoet"></span>
+                                <div class="fun-info">
+                                    <p class="timer display-5 counter">15</p>
+                                    <p>DESIGN AWARD WON</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="" id="blog">
+            <div class="container">
+                <div class="section__heading">
+                    <div class="h3">BLOG</div>
+                    <div class="text-muted">
+                        Phasellus fringilla suscipit risus nec eleifend.
+                        Pellentesque eu quam sem, ac malesuada leo sem quam
+                        pellente. Awesome sliders give you the opportunity to
+                        showcase your content.
+                    </div>
+                </div>
+                <div class="row section__content overflow-hidden g-0">
+                    <div class="col-lg-4">
+                        <div class="post-single">
+                            <div
+                                class="post__top"
+                                style="background-image: url('./images/p1.jpg')"
+                            ></div>
+                            <span class="lack"></span>
+
+                            <div class="post__bottom">
+                                <span class="horizontal-span"></span>
+                                <p class="lsp-2">
+                                    QUIS VELIT LOREM. NAM A NEQUE CONSECTETUR
+                                    COMMODO
+                                </p>
+                                <div class="fw-light">
+                                    <a
+                                        class="text-muted text-decoration-none"
+                                        href=""
+                                    >
+                                        <small class="blog__link"
+                                            >INTERFACE,
+                                        </small>
+                                    </a>
+                                    <a
+                                        class="text-muted text-decoration-none"
+                                        href=""
+                                    >
+                                        <small class="blog__link"
+                                            >STANDARD,</small
+                                        >
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="post-single">
+                            <div class="post__bottom">
+                                <span class="horizontal-span"></span>
+                                <p class="lsp-2">
+                                    MAURIS QUIS TVELIT LOREM. NAM NEQUE JUSTO
+                                    SUSPENDISSE
+                                </p>
+                                <div class="fw-light">
+                                    <a
+                                        class="text-muted text-decoration-none"
+                                        href=""
+                                    >
+                                        <small class="blog__link"
+                                            >INTERFACE,
+                                        </small>
+                                    </a>
+                                    <a
+                                        class="text-muted text-decoration-none"
+                                        href=""
+                                    >
+                                        <small class="blog__link"
+                                            >STANDARD,</small
+                                        >
+                                    </a>
+                                </div>
+                            </div>
+                            <div
+                                class="post__top"
+                                style="background-image: url('./images/p2.jpg')"
+                            ></div>
+                            <span class="lack"></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="post-single">
+                            <div
+                                class="post__top"
+                                style="background-image: url('./images/p3.jpg')"
+                            ></div>
+                            <span class="lack"></span>
+                            <div class="post__bottom">
+                                <span class="horizontal-span"></span>
+                                <p class="lsp-2">
+                                    COMMODO VELIT LOREM. NAM A NEQUE CONSECTETUR
+                                    QUIS
+                                </p>
+                                <div class="fw-light">
+                                    <a
+                                        class="text-muted text-decoration-none"
+                                        href=""
+                                    >
+                                        <small class="blog__link"
+                                            >INTERFACE,
+                                        </small>
+                                    </a>
+                                    <a
+                                        class="text-muted text-decoration-none"
+                                        href=""
+                                    >
+                                        <small class="blog__link"
+                                            >STANDARD,</small
+                                        >
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center pt-4">
                         <a
-                            class="nav-link active"
-                            data-filter="all"
-                            aria-current="page"
-                            >ALL</a
-                        >
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-filter=".printing">PRINTING</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-filter=".web">WEB</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-filter=".illutration"
-                            >ILLUTRATION</a
-                        >
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-filter=".media">MEDIA</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-filter=".crafts">CRAFTS</a>
-                    </li>
-                </ul>
+                            href=""
+                            class="blog__view-all text-decoration-none text-uppercase fw-light"
+                            >View all blogs
+                            <i class="fas fa-long-arrow-alt-right ms-3"></i
+                        ></a>
+                    </div>
+                </div>
+            </div>
+            <div
+                id="blog-carousel"
+                class="carousel slide"
+                data-bs-ride="carousel"
+            >
+                <div class="carousel-indicators">
+                    <button
+                        type="button"
+                        data-bs-target="#blog-carousel"
+                        data-bs-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                        aria-label="Slide 1"
+                    ></button>
+                    <button
+                        type="button"
+                        data-bs-target="#blog-carousel"
+                        data-bs-slide-to="1"
+                        aria-label="Slide 2"
+                    ></button>
+                    <button
+                        type="button"
+                        data-bs-target="#blog-carousel"
+                        data-bs-slide-to="2"
+                        aria-label="Slide 3"
+                    ></button>
+                </div>
+                <div
+                    class="carousel-inner"
+                    style="background-image: url('./images/19.jpg')"
+                >
+                    <div class="carousel-item active">
+                        <div class="carousel-img">
+                            <img src="./images/event_avatar1.jpg" alt="..." />
+                        </div>
 
-                <div class="row g-2 container1">
-                    <div class="col-sm-6 col-md-4 col-lg-3 mix printing">
-                        <div class="portfolio__item">
-                            <img src="./images/01.jpg" class="w-100" alt="" />
+                        <div
+                            class="container carousel-content text-white text-center"
+                        >
+                            <p class="fst-italic">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Placeat alias a pariatur nobis
+                                quidem totam perferendis.
+                            </p>
+                            <p class="lsp-2 m-0">- LINDA SMITH -</p>
+                            <small class="lsp-2">CUO</small>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 mix web crafts">
-                        <div class="portfolio__item">
-                            <img src="./images/02.jpg" class="w-100" alt="" />
+                    <div class="carousel-item">
+                        <div class="carousel-img">
+                            <img src="./images/event_avatar3.jpg" alt="..." />
+                        </div>
+
+                        <div
+                            class="container carousel-content text-white text-center"
+                        >
+                            <p class="fst-italic">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Placeat alias a pariatur nobis
+                                quidem totam perferendis.
+                            </p>
+                            <p class="lsp-2 m-0">- KENVIN PAIGE -</p>
+                            <small class="lsp-2">BOL</small>
                         </div>
                     </div>
-                    <div
-                        class="col-sm-6 col-md-4 col-lg-3 mix web illutration crafts"
-                    >
-                        <div class="portfolio__item">
-                            <img src="./images/03.jpg" class="w-100" alt="" />
+                    <div class="carousel-item">
+                        <div class="carousel-img">
+                            <img src="./images/event_avatar1.jpg" alt="..." />
                         </div>
-                    </div>
-                    <div
-                        class="col-sm-6 col-md-4 col-lg-3 mix illutration media printing"
-                    >
-                        <div class="portfolio__item">
-                            <img src="./images/04.jpg" class="w-100" alt="" />
-                        </div>
-                    </div>
-                    <div
-                        class="col-sm-6 col-md-4 col-lg-3 mix web media printing media crafts"
-                    >
-                        <div class="portfolio__item">
-                            <img src="./images/05.jpg" class="w-100" alt="" />
-                        </div>
-                    </div>
-                    <div
-                        class="col-sm-6 col-md-4 col-lg-3 mix illutration media crafts"
-                    >
-                        <div class="portfolio__item">
-                            <img src="./images/06.jpg" class="w-100" alt="" />
-                        </div>
-                    </div>
-                    <div
-                        class="col-sm-6 col-md-4 col-lg-3 mix illutration media web printing"
-                    >
-                        <div class="portfolio__item">
-                            <img src="./images/07.jpg" class="w-100" alt="" />
-                        </div>
-                    </div>
-                    <div
-                        class="col-sm-6 col-md-4 col-lg-3 mix media crafts web printing"
-                    >
-                        <div class="portfolio__item">
-                            <img src="./images/08.jpg" class="w-100" alt="" />
+
+                        <div
+                            class="container carousel-content text-white text-center"
+                        >
+                            <p class="fst-italic">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Placeat alias a pariatur nobis
+                                quidem totam perferendis.
+                            </p>
+                            <p class="lsp-2 m-0">- MADONA -</p>
+                            <small class="lsp-2">CEO</small>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="bg-dark py-5 text-white">
-                ARE YOU IMPRESSED WITH OUR CREATIVE WORK? START BUILDING YOUR
-                PROJECT WITH MASSIVE
-                <button>purchase now</button>
+
+            <section class="video-demo container">
+                <div class="section__heading">
+                    <div class="h5">WATCH VIDEO DEMO</div>
+                    <div class="text-muted">
+                        Phasellus fringilla suscipit risus nec eleifend.
+                        Pellentesque eu quam sem, ac malesuada leo sem quam
+                        pellente. Awesome sliders give you the opportunity to
+                        showcase your content.
+                    </div>
+                </div>
+                <div class="row section__content">
+                    <div
+                        class="col-md-6 mx-auto animate__animated"
+                        animateClass="animate__zoomIn"
+                    >
+                        <div class="ratio ratio-16x9">
+                            <iframe
+                                src="https://www.youtube.com/embed/ZaBXd0FwIco"
+                                title="YouTube video"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="row blog-banner text-white m-0">
+                <div
+                    class="col-lg-6 blog-banner__item position-relative"
+                    style="background-image: url('./images/p10.jpg')"
+                >
+                    <a
+                        href="#"
+                        class="position-absolute top-0 start-0 end-0 bottom-0"
+                    ></a>
+                    <div>
+                        <p class="">NEWS</p>
+                        <p class="h3 item__title">
+                            SOME SERVICES THAT WE PROVIDE OCCATIONALY
+                        </p>
+                    </div>
+
+                    <p>
+                        Phasellus fringilla suscipit risus nec eleifend.
+                        Pellentesque eu quam sem, ac malesuada leo sem quam
+                        pellente. Awesome sliders give you the opportunity to
+                        showcase your content.
+                    </p>
+                </div>
+                <div
+                    class="col-lg-6 blog-banner__item position-relative"
+                    style="background-image: url('./images/p11.jpg')"
+                >
+                    <a
+                        href="#"
+                        class="position-absolute top-0 start-0 end-0 bottom-0"
+                    ></a>
+                    <div>
+                        <p class="">NEWS</p>
+                        <p class="h3 item__title">
+                            EDITORS NOW USE AS THEIR DEFAULT MODEL
+                        </p>
+                    </div>
+
+                    <p>
+                        Fringilla suscipit risus nec eleifend. Pellentesque eu
+                        quam sem, ac malesuada leo sem quam pellente. Awesome
+                        sliders give you the opportunity to showcase your
+                        content.
+                    </p>
+                </div>
             </div>
         </section>
 
-        <section class="container py-5" id="services">
-            <p class="text-center h2">MASSIVE SERVICES</p>
+        <section id="price-table">
+            <div class="container">
+                <div class="section__heading">
+                    <div class="h2">PRICE TABLE</div>
+                    <div class="text-muted">
+                        Phasellus fringilla suscipit risus nec eleifend.
+                        Pellentesque eu quam sem, ac malesuada leo sem quam
+                        pellente. Awesome sliders give you the opportunity to
+                        showcase your content.
+                    </div>
+                </div>
+                <div class="row section__content">
+                    <div class="col-md-8 col-lg-4 mx-auto">
+                        <div class="price-table__item p-5 border text-center">
+                            <div>
+                                <p class="h5 lsp-2">STARTER</p>
+                            </div>
 
-            <p class="text-center text-mutedn py-3">
-                Lid est laborum dolo rumes fugats untras. Etharums ser quidem
-                rerum facilis dolores nemis omnis fugats vitaes nemo minima
-                rerums unsers sadips amets.
-            </p>
-        </section>
-        <section class="container py-5" id="features">
-            <p class="text-center h2">CORE FEATURE</p>
+                            <hr />
+                            <div>
+                                <p><span class="display-6">$ 29</span>.00</p>
+                                <small>PER MONTH</small>
+                            </div>
+                            <hr />
+                            <div>
+                                <p
+                                    class="w-75 mx-auto price-table__item__describe"
+                                >
+                                    24/7 Tech Suport Lorem ipsum dolor. ipsum
+                                    dolor sit amet. dolor sit amet.
+                                </p>
+                            </div>
 
-            <p class="text-center text-mutedn py-3">
-                Phasellus fringilla suscipit risus nec eleifend. Pellentesque eu
-                quam sem, ac malesuada leo sem quam pellente. Awesome sliders
-                give you the opportunity to showcase your content.
-            </p>
+                            <button
+                                class="massive-button-lg white-primary-button"
+                            >
+                                PURCHASE THIS PLAN
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-lg-4 mx-auto">
+                        <div
+                            class="price-table__item p-5 border text-center text-white bg-dark"
+                        >
+                            <div>
+                                <p class="h5 lsp-2">STARTER</p>
+                            </div>
+
+                            <hr />
+                            <div>
+                                <p><span class="display-6">$ 29</span>.00</p>
+                                <small>PER MONTH</small>
+                            </div>
+                            <hr />
+                            <div>
+                                <p
+                                    class="w-75 mx-auto price-table__item__describe"
+                                >
+                                    24/7 Tech Suport Lorem ipsum dolor. ipsum
+                                    dolor sit amet. dolor sit amet.
+                                </p>
+                            </div>
+
+                            <button
+                                class="massive-button-lg white-primary-button border-transparent"
+                            >
+                                PURCHASE THIS PLAN
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-lg-4 mx-auto">
+                        <div class="price-table__item p-5 border text-center">
+                            <div>
+                                <p class="h5 lsp-2">STARTER</p>
+                            </div>
+
+                            <hr />
+                            <div>
+                                <p><span class="display-6">$ 29</span>.00</p>
+                                <small>PER MONTH</small>
+                            </div>
+                            <hr />
+                            <div>
+                                <p
+                                    class="w-75 mx-auto price-table__item__describe"
+                                >
+                                    24/7 Tech Suport Lorem ipsum dolor. ipsum
+                                    dolor sit amet. dolor sit amet.
+                                </p>
+                            </div>
+
+                            <button
+                                class="massive-button-lg white-primary-button"
+                            >
+                                PURCHASE THIS PLAN
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="invite" class="bg-light text-center py-5">
+                <div class="container">
+                    <div class="section__heading">
+                        <p class="h2 text--primary">
+                            DON’T WANNA PURCHASE NOW?
+                        </p>
+                        <p class="text-muted">subscribe to get in touch</p>
+                    </div>
+                    <div class="col-lg-8 mx-auto row g-3">
+                        <div class="col-md-9">
+                            <input
+                                type="text"
+                                placeholder="Enter email"
+                                class="w-100 massive-input-lg"
+                            />
+                        </div>
+                        <div class="col-md-3">
+                            <button
+                                class="w-100 massive-button-lg dark-primary-button rounded-1"
+                            >
+                                SUBCRIBE
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="our-clients container">
+                <div class="section__heading">
+                    <div class="h2">OUR CLIENTS</div>
+                    <div class="text-muted">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Aut explicabo iusto quaerat
+                    </div>
+                </div>
+                <div class="our-clients__carousel overflow-hidden">
+                    <div class="item">
+                        <img src="./images/c-1.png" alt="" />
+                    </div>
+                    <div class="item">
+                        <img src="./images/c-2.png" alt="" />
+                    </div>
+                    <div class="item">
+                        <img src="./images/c-3.png" alt="" />
+                    </div>
+                    <div class="item">
+                        <img src="./images/c-4.png" alt="" />
+                    </div>
+                    <div class="item">
+                        <img src="./images/c-5.png" alt="" />
+                    </div>
+                    <div class="item">
+                        <img src="./images/c-6.png" alt="" />
+                    </div>
+                    <div class="item">
+                        <img src="./images/c-7.png" alt="" />
+                    </div>
+                    <div class="item">
+                        <img src="./images/c-8.png" alt="" />
+                    </div>
+                </div>
+            </div>
         </section>
+        <section
+            class="contact-bg text-white"
+            style="background-image: url('./images/15.jpg')"
+        >
+            <div class="container">
+                <div class="row overflow-hidden fw-light">
+                    <div class="col-md-4 text-center">
+                        <i class="fas fa-map-marked-alt fa-3x"></i>
+                        <p class="mt-4 h4">LOCATION</p>
+                        <p>Upper Level, Overseas Passenger</p>
+                        <p>Terminal, The Rocks, Sydney 2000</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <i class="fas fa-mobile-alt fa-3x"></i>
+                        <p class="mt-4 h4">CALL US</p>
+                        <p >Any time. We are open 24/7</p>
+                        <p>+1 2345-67-89000</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <i class="far fa-envelope fa-3x"></i>
+                        <p class="mt-4 h4">MAIL US</p>
+                        <p>get support via email</p>
+                        <p>mail@massivetheme.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="section__heading">
+                <div class="h2">DROP US A LINE</div>
+                <div class="text-muted">
+                    Nam libero tempore, cum soluta nobis est eligendi optio
+                    cumque nihil impedit quo minus id quod maxime placeat facere
+                    possimus. Nam libero tempore
+                </div>
+            </div>
+            <div class="section__content row">
+                <form action="" class="contact-form col-lg-8 mx-auto">
+                    <div class="row g-2">
+                        <div class="col-lg-6 contact-form__left">
+                            <div class="">
+                                <input type="text" name="" class="massive-input w-100 border" id="">
+                            </div>
+                            <div class="">
+                                <input type="text" name="" class="massive-input w-100 border" id="">
+                            </div>
+                            <div class="">
+                                <input type="text" name="" class="massive-input w-100 border" id="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 contact-form__right">
+                            <div class="">
+                                <textarea class="massive-input border w-100" name="" id="" cols="30" rows="4"></textarea>
+                            </div>
+                            <div class="">
+                                <button class="lsp-2 massive-button dark-primary-button w-100">SEND MESSAGE</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <footer class="bg-light">
+            <div>icon</div>
+            <p>THE ULTIMATE THEME WITH MASSIVE COLLECTION</p>
+            <div class="list-icon">fb twitter dribble gg+ behance</div>
+            <div class="">
+                © MASSIVE 2014.
+                <p>BUILDING YOUR SITE WITH LOTS OF FUN</p>
+            </div>
+        </footer>
+
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
             integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
@@ -617,5 +1560,47 @@
             var mixer = mixitup(containerEl);
         </script>
         <script src="./main.js"></script>
+        <script src="./lib/slick-carousel/js/slick.min.js"></script>
+        <script>
+            $('.our-clients__carousel').slick({
+                dots: true,
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                infinite: false,
+                responsive: [
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 1,
+                        },
+                    },
+                    {
+                        breakpoint: 576,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                        },
+                    },
+                    {
+                        breakpoint: 320,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                        },
+                    },
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ],
+            });
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+        <script src="./lib/counting-up/jquery.countup.js"></script>
+        <script>
+            $('.counter').countUp();
+        </script>
     </body>
 </html>

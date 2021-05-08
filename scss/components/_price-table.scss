@@ -1,0 +1,18 @@
+#price-table {
+    .price-table__item {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .price-table__item__describe{
+        line-height: 2.5rem;
+    }
+    .slick-dots{
+        position: relative;
+        bottom: 0;
+        button::before{
+            font-size: .7rem;
+        }
+    }
+}
