@@ -14,6 +14,20 @@ header {
     background-color: transparent;
     padding: 2rem 0;
     
+    .navbar-toggler-custom {
+        padding: 0;
+        em {
+            width: 20px;
+            height: 3px;
+            margin: 4px 0;
+            display: block;
+            background-color: $lighter-color;
+        }
+        border: none;
+        &:focus {
+            box-shadow: none;
+        }
+    }
     #main-navbar {
         .nav-item > .nav-link {
             text-transform: uppercase;
