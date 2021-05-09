@@ -13,19 +13,20 @@
             top: -30px;
             left: 30px;
             position: absolute;
-            box-shadow: 0 0 0 10px #fff;
+            box-shadow: 0 0 0 10px $white-color;
             background-color: $dark-color;
-            color: #fff;
+            color: $white-color;
             border-radius: 0.3rem;
             display: flex;
             justify-content: center;
             align-items: center;
-            &:hover {
-                background-color: $primary-color;
-            }
+            transition: all .5s;
         }
         .feature-content {
             padding-top: 2rem;
+        }
+        &:hover .icon{
+            background-color: $primary-color;
         }
     }
 

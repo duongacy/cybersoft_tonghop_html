@@ -38,6 +38,10 @@
             rel="stylesheet"
             href="./lib/slick-carousel/css/slick-theme.css"
         />
+        <link
+            rel="stylesheet"
+            href="./lib/magnific-popup/css/magnific-popup.css"
+        />
         <link rel="stylesheet" href="./main.css" />
     </head>
     <body>
@@ -121,7 +125,7 @@
                 </nav>
             </div>
         </header>
-        <div class="home-section" id="home">
+        <section class="home-section" id="home">
             <div
                 id="carouselExampleIndicators"
                 class="carousel slide carousel-fade"
@@ -244,9 +248,9 @@
                     data-bs-slide="next"
                 ></button>
             </div>
-        </div>
+        </section>
 
-        <section id="about">
+        <section class="section" id="about">
             <div class="container">
                 <div class="section__heading">
                     <p class="h3">WE LOVE TO DESIGN</p>
@@ -378,7 +382,7 @@
             </div>
         </section>
 
-        <section id="team">
+        <section class="section" id="team">
             <div class="container">
                 <div class="section__heading">
                     <p class="h3">OUR TEAM</p>
@@ -498,7 +502,7 @@
             </div>
         </section>
 
-        <section id="portfolio">
+        <section class="section" id="portfolio">
             <div class="container-fluid">
                 <div class="section__heading">
                     <div class="h2">PORTFOLIO</div>
@@ -509,7 +513,7 @@
                     </div>
                 </div>
                 <div class="section__content">
-                    <ul class="nav justify-content-center padding-y-3">
+                    <ul class="nav justify-content-center pb-3">
                         <li class="nav-item">
                             <a
                                 class="nav-link active"
@@ -539,16 +543,25 @@
                         </li>
                     </ul>
 
-                    <div class="row container1 overflow-hidden g-3">
+                    <div
+                        class="row container1 overflow-hidden g-3 parent-container"
+                    >
                         <div class="col-sm-6 col-md-4 col-lg-3 mix printing">
                             <div class="portfolio__item">
                                 <div class="portfolio-overlay">
-                                    <a class="lightbox-view-icon"
+                                    <a
+                                        class="lightbox-view-icon"
+                                        href="./images/01.jpg"
                                         ><i class="fas fa-search fa-2x"></i
                                     ></a>
                                     <div class="text-center">
-                                        <p class="lightbox-view">
-                                            LIGHTBOX VIEW
+                                        <p>
+                                            <a
+                                                class="lightbox-view text-decoration-none"
+                                                href="./images/01.jpg"
+                                            >
+                                                LIGHTBOX VIEW
+                                            </a>
                                         </p>
                                         <a class="category" href="#"
                                             >CATEGORY</a
@@ -564,6 +577,26 @@
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-3 mix web crafts">
                             <div class="portfolio__item">
+                                <div class="portfolio-overlay">
+                                    <a
+                                        class="lightbox-view-icon"
+                                        href="./images/02.jpg"
+                                        ><i class="fas fa-search fa-2x"></i
+                                    ></a>
+                                    <div class="text-center">
+                                        <p>
+                                            <a
+                                                class="lightbox-view text-decoration-none"
+                                                href="./images/02.jpg"
+                                            >
+                                                LIGHTBOX VIEW
+                                            </a>
+                                        </p>
+                                        <a class="category" href="#"
+                                            >CATEGORY</a
+                                        >
+                                    </div>
+                                </div>
                                 <img
                                     src="./images/02.jpg"
                                     class="w-100"
@@ -575,6 +608,26 @@
                             class="col-sm-6 col-md-4 col-lg-3 mix web illutration crafts"
                         >
                             <div class="portfolio__item">
+                                <div class="portfolio-overlay">
+                                    <a
+                                        class="lightbox-view-icon"
+                                        href="./images/03.jpg"
+                                        ><i class="fas fa-search fa-2x"></i
+                                    ></a>
+                                    <div class="text-center">
+                                        <p>
+                                            <a
+                                                class="lightbox-view text-decoration-none"
+                                                href="./images/03.jpg"
+                                            >
+                                                LIGHTBOX VIEW
+                                            </a>
+                                        </p>
+                                        <a class="category" href="#"
+                                            >CATEGORY</a
+                                        >
+                                    </div>
+                                </div>
                                 <img
                                     src="./images/03.jpg"
                                     class="w-100"
@@ -586,6 +639,26 @@
                             class="col-sm-6 col-md-4 col-lg-3 mix illutration media printing"
                         >
                             <div class="portfolio__item">
+                                <div class="portfolio-overlay">
+                                    <a
+                                        class="lightbox-view-icon"
+                                        href="./images/04.jpg"
+                                        ><i class="fas fa-search fa-2x"></i
+                                    ></a>
+                                    <div class="text-center">
+                                        <p>
+                                            <a
+                                                class="lightbox-view text-decoration-none"
+                                                href="./images/04.jpg"
+                                            >
+                                                LIGHTBOX VIEW
+                                            </a>
+                                        </p>
+                                        <a class="category" href="#"
+                                            >CATEGORY</a
+                                        >
+                                    </div>
+                                </div>
                                 <img
                                     src="./images/04.jpg"
                                     class="w-100"
@@ -597,6 +670,26 @@
                             class="col-sm-6 col-md-4 col-lg-3 mix web media printing media crafts"
                         >
                             <div class="portfolio__item">
+                                <div class="portfolio-overlay">
+                                    <a
+                                        class="lightbox-view-icon"
+                                        href="./images/05.jpg"
+                                        ><i class="fas fa-search fa-2x"></i
+                                    ></a>
+                                    <div class="text-center">
+                                        <p>
+                                            <a
+                                                class="lightbox-view text-decoration-none"
+                                                href="./images/05.jpg"
+                                            >
+                                                LIGHTBOX VIEW
+                                            </a>
+                                        </p>
+                                        <a class="category" href="#"
+                                            >CATEGORY</a
+                                        >
+                                    </div>
+                                </div>
                                 <img
                                     src="./images/05.jpg"
                                     class="w-100"
@@ -608,6 +701,26 @@
                             class="col-sm-6 col-md-4 col-lg-3 mix illutration media crafts"
                         >
                             <div class="portfolio__item">
+                                <div class="portfolio-overlay">
+                                    <a
+                                        class="lightbox-view-icon"
+                                        href="./images/06.jpg"
+                                        ><i class="fas fa-search fa-2x"></i
+                                    ></a>
+                                    <div class="text-center">
+                                        <p>
+                                            <a
+                                                class="lightbox-view text-decoration-none"
+                                                href="./images/06.jpg"
+                                            >
+                                                LIGHTBOX VIEW
+                                            </a>
+                                        </p>
+                                        <a class="category" href="#"
+                                            >CATEGORY</a
+                                        >
+                                    </div>
+                                </div>
                                 <img
                                     src="./images/06.jpg"
                                     class="w-100"
@@ -619,6 +732,26 @@
                             class="col-sm-6 col-md-4 col-lg-3 mix illutration media web printing"
                         >
                             <div class="portfolio__item">
+                                <div class="portfolio-overlay">
+                                    <a
+                                        class="lightbox-view-icon"
+                                        href="./images/07.jpg"
+                                        ><i class="fas fa-search fa-2x"></i
+                                    ></a>
+                                    <div class="text-center">
+                                        <p>
+                                            <a
+                                                class="lightbox-view text-decoration-none"
+                                                href="./images/07.jpg"
+                                            >
+                                                LIGHTBOX VIEW
+                                            </a>
+                                        </p>
+                                        <!-- <a class="category" href="#"
+                                            >CATEGORY</a
+                                        > -->
+                                    </div>
+                                </div>
                                 <img
                                     src="./images/07.jpg"
                                     class="w-100"
@@ -630,6 +763,26 @@
                             class="col-sm-6 col-md-4 col-lg-3 mix media crafts web printing"
                         >
                             <div class="portfolio__item">
+                                <div class="portfolio-overlay">
+                                    <a
+                                        class="lightbox-view-icon"
+                                        href="./images/08.jpg"
+                                        ><i class="fas fa-search fa-2x"></i
+                                    ></a>
+                                    <div class="text-center">
+                                        <p>
+                                            <a
+                                                class="lightbox-view text-decoration-none"
+                                                href="./images/08.jpg"
+                                            >
+                                                LIGHTBOX VIEW
+                                            </a>
+                                        </p>
+                                        <a class="category" href="#"
+                                            >CATEGORY</a
+                                        >
+                                    </div>
+                                </div>
                                 <img
                                     src="./images/08.jpg"
                                     class="w-100"
@@ -644,7 +797,7 @@
                 <div class="container section__content">
                     <div class="row overflow-hidden g-4">
                         <div class="col-md-8">
-                            <p class="m-0 lh-lg">
+                            <p class="lh-lg">
                                 ARE YOU IMPRESSED WITH OUR CREATIVE WORK?
                             </p>
                             <p class="m-0 fs-3">
@@ -669,7 +822,7 @@
             </div>
         </section>
 
-        <section class="" id="services">
+        <section class="section" id="services">
             <div class="container">
                 <div class="section__heading">
                     <div class="h2">SERVICES</div>
@@ -681,7 +834,7 @@
                 </div>
                 <div class="row section__content px-2">
                     <div
-                        class="col-md-4 services__item animate__animated"
+                        class="col-md-6 col-lg-4 services__item animate__animated"
                         animateClass="animate__zoomIn"
                     >
                         <i class="far fa-lightbulb fa-3x"></i>
@@ -693,7 +846,7 @@
                         </p>
                     </div>
                     <div
-                        class="col-md-4 services__item animate__animated"
+                        class="col-md-6 col-lg-4 services__item animate__animated"
                         animateClass="animate__zoomIn"
                     >
                         <i class="far fa-window-maximize fa-3x"></i>
@@ -707,7 +860,7 @@
                         </p>
                     </div>
                     <div
-                        class="col-md-4 services__item animate__animated"
+                        class="col-md-6 col-lg-4 services__item animate__animated"
                         animateClass="animate__zoomIn"
                     >
                         <i class="fas fa-laptop fa-3x"></i>
@@ -719,7 +872,7 @@
                         </p>
                     </div>
                     <div
-                        class="col-md-4 services__item animate__animated"
+                        class="col-md-6 col-lg-4 services__item animate__animated"
                         animateClass="animate__zoomIn"
                     >
                         <i class="fas fa-cogs fa-3x"></i>
@@ -731,7 +884,7 @@
                         </p>
                     </div>
                     <div
-                        class="col-md-4 services__item animate__animated"
+                        class="col-md-6 col-lg-4 services__item animate__animated"
                         animateClass="animate__zoomIn"
                     >
                         <i class="fas fa-pencil-ruler fa-3x"></i>
@@ -743,7 +896,7 @@
                         </p>
                     </div>
                     <div
-                        class="col-md-4 services__item animate__animated"
+                        class="col-md-6 col-lg-4 services__item animate__animated"
                         animateClass="animate__zoomIn"
                     >
                         <i class="fas fa-pen-fancy fa-3x"></i>
@@ -896,7 +1049,7 @@
             </div>
         </section>
 
-        <section class="" id="features">
+        <section class="section" id="features">
             <div class="container">
                 <div class="section__heading">
                     <div class="h2">CORE FEATURE</div>
@@ -954,10 +1107,7 @@
                                 nisi eleifend.
                             </p>
                         </div>
-                        <div
-                            class="features__item animate__animated py-2"
-                            animateClass="animate__fadeInRight"
-                        >
+                        <div class="features__item py-2">
                             <button
                                 class="massive-button-lg dark-primary-button rounded-1 me-2"
                             >
@@ -1019,7 +1169,7 @@
             </div>
         </section>
 
-        <section class="" id="blog">
+        <section class="section" id="blog">
             <div class="container">
                 <div class="section__heading">
                     <div class="h3">BLOG</div>
@@ -1229,9 +1379,9 @@
                 </div>
             </div>
 
-            <section class="video-demo container">
+            <section class="section video-demo container">
                 <div class="section__heading">
-                    <div class="h5">WATCH VIDEO DEMO</div>
+                    <div class="h2">WATCH VIDEO DEMO</div>
                     <div class="text-muted">
                         Phasellus fringilla suscipit risus nec eleifend.
                         Pellentesque eu quam sem, ac malesuada leo sem quam
@@ -1241,7 +1391,7 @@
                 </div>
                 <div class="row section__content">
                     <div
-                        class="col-md-6 mx-auto animate__animated"
+                        class="col-md-9 col-lg-6 mx-auto animate__animated"
                         animateClass="animate__zoomIn"
                     >
                         <div class="ratio ratio-16x9">
@@ -1304,7 +1454,7 @@
             </div>
         </section>
 
-        <section id="price-table">
+        <section class="section" id="price-table">
             <div class="container">
                 <div class="section__heading">
                     <div class="h2">PRICE TABLE</div>
@@ -1317,7 +1467,10 @@
                 </div>
                 <div class="row section__content">
                     <div class="col-md-8 col-lg-4 mx-auto">
-                        <div class="price-table__item p-5 border text-center">
+                        <div
+                            class="price-table__item p-5 border text-center animate__animated"
+                            animateClass="animate__fadeInLeft"
+                        >
                             <div>
                                 <p class="h5 lsp-2">STARTER</p>
                             </div>
@@ -1346,15 +1499,16 @@
                     </div>
                     <div class="col-md-8 col-lg-4 mx-auto">
                         <div
-                            class="price-table__item p-5 border text-center text-white bg-dark"
+                            class="price-table__item p-5 text-center text-white bg-dark animate__animated"
+                            animateClass="animate__fadeInUp"
                         >
                             <div>
-                                <p class="h5 lsp-2">STARTER</p>
+                                <p class="h5 lsp-2 text--primary">PREMIUM</p>
                             </div>
 
                             <hr />
                             <div>
-                                <p><span class="display-6">$ 29</span>.00</p>
+                                <p><span class="display-6">$ 49</span>.00</p>
                                 <small>PER MONTH</small>
                             </div>
                             <hr />
@@ -1375,14 +1529,17 @@
                         </div>
                     </div>
                     <div class="col-md-8 col-lg-4 mx-auto">
-                        <div class="price-table__item p-5 border text-center">
+                        <div
+                            class="price-table__item p-5 border text-center animate__animated"
+                            animateClass="animate__fadeInRight"
+                        >
                             <div>
-                                <p class="h5 lsp-2">STARTER</p>
+                                <p class="h5 lsp-2">ENTERPRISE</p>
                             </div>
 
                             <hr />
                             <div>
-                                <p><span class="display-6">$ 29</span>.00</p>
+                                <p><span class="display-6">$ 79</span>.00</p>
                                 <small>PER MONTH</small>
                             </div>
                             <hr />
@@ -1404,7 +1561,7 @@
                     </div>
                 </div>
             </div>
-            <div id="invite" class="bg-light text-center py-5">
+            <div id="invite" class="section bg-light text-center">
                 <div class="container">
                     <div class="section__heading">
                         <p class="h2 text--primary">
@@ -1417,7 +1574,7 @@
                             <input
                                 type="text"
                                 placeholder="Enter email"
-                                class="w-100 massive-input-lg"
+                                class="w-100 massive-input-lg rounded-1"
                             />
                         </div>
                         <div class="col-md-3">
@@ -1430,7 +1587,7 @@
                     </div>
                 </div>
             </div>
-            <div class="our-clients container">
+            <div class="section our-clients container">
                 <div class="section__heading">
                     <div class="h2">OUR CLIENTS</div>
                     <div class="text-muted">
@@ -1467,33 +1624,42 @@
             </div>
         </section>
         <section
-            class="contact-bg text-white"
+            class="section contact-bg text-white"
             style="background-image: url('./images/15.jpg')"
         >
             <div class="container">
                 <div class="row overflow-hidden fw-light">
                     <div class="col-md-4 text-center">
-                        <i class="fas fa-map-marked-alt fa-3x"></i>
-                        <p class="mt-4 h4">LOCATION</p>
+                        <i
+                            class="fas fa-map-marked-alt fa-3x animate__animated"
+                            animateClass="animate__fadeInDown"
+                        ></i>
+                        <p class="mt-4 h5">LOCATION</p>
                         <p>Upper Level, Overseas Passenger</p>
                         <p>Terminal, The Rocks, Sydney 2000</p>
                     </div>
                     <div class="col-md-4 text-center">
-                        <i class="fas fa-mobile-alt fa-3x"></i>
-                        <p class="mt-4 h4">CALL US</p>
-                        <p >Any time. We are open 24/7</p>
+                        <i
+                            class="fas fa-mobile-alt fa-3x animate__animated"
+                            animateClass="animate__fadeInDown"
+                        ></i>
+                        <p class="mt-4 h5">CALL US</p>
+                        <p>Any time. We are open 24/7</p>
                         <p>+1 2345-67-89000</p>
                     </div>
                     <div class="col-md-4 text-center">
-                        <i class="far fa-envelope fa-3x"></i>
-                        <p class="mt-4 h4">MAIL US</p>
+                        <i
+                            class="far fa-envelope fa-3x animate__animated"
+                            animateClass="animate__fadeInDown"
+                        ></i>
+                        <p class="mt-4 h5">MAIL US</p>
                         <p>get support via email</p>
                         <p>mail@massivetheme.com</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="container">
+        <section class="section container" id="contact">
             <div class="section__heading">
                 <div class="h2">DROP US A LINE</div>
                 <div class="text-muted">
@@ -1503,27 +1669,47 @@
                 </div>
             </div>
             <div class="section__content row">
-                <form action="" class="contact-form col-lg-8 mx-auto">
+                <form action="" class="contact-form col-lg-10 mx-auto">
                     <div class="row g-2">
                         <div class="col-lg-6 contact-form__left">
                             <div class="">
-                                <input type="text" name="" class="massive-input w-100 border" id="">
+                                <input
+                                    type="text"
+                                    class="massive-input w-100 border"
+                                    placeholder="Name *"
+                                />
                             </div>
                             <div class="">
-                                <input type="text" name="" class="massive-input w-100 border" id="">
+                                <input
+                                    type="email"
+                                    class="massive-input w-100 border"
+                                    placeholder="Email *"
+                                />
                             </div>
                             <div class="">
-                                <input type="text" name="" class="massive-input w-100 border" id="">
+                                <input
+                                    type="phone"
+                                    class="massive-input w-100 border"
+                                    placeholder="Phone *"
+                                />
                             </div>
                         </div>
                         <div class="col-lg-6 contact-form__right">
                             <div class="">
-                                <textarea class="massive-input border w-100" name="" id="" cols="30" rows="4"></textarea>
+                                <textarea
+                                    placeholder="Text here ... "
+                                    class="massive-input border w-100"
+                                    cols="30"
+                                    rows="4"
+                                ></textarea>
                             </div>
                             <div class="">
-                                <button class="lsp-2 massive-button dark-primary-button w-100">SEND MESSAGE</button>
+                                <button
+                                    class="lsp-2 massive-button dark-primary-button w-100"
+                                >
+                                    SEND MESSAGE
+                                </button>
                             </div>
-                            
                         </div>
                     </div>
                 </form>
@@ -1601,6 +1787,21 @@
         <script src="./lib/counting-up/jquery.countup.js"></script>
         <script>
             $('.counter').countUp();
+        </script>
+        <script src="./lib/magnific-popup/js/jquery.magnific-popup.min.js"></script>
+        <script>
+            $('.parent-container').magnificPopup({
+                delegate: 'a.lightbox-view-icon',
+                type: 'image',
+                gallery:{enabled:true}
+                // other options
+            });
+            $('.parent-container').magnificPopup({
+                delegate: 'a.lightbox-view',
+                type: 'image',
+                gallery:{enabled:true}
+                // other options
+            });
         </script>
     </body>
 </html>
