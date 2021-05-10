@@ -797,4 +797,32 @@ header .navbar-collapse {
 #team .team__item .item__overlay:hover .overlay__list-icon {
   bottom: 10%;
 }
+
+footer .footer__logo {
+  width: 8rem;
+}
+
+footer .list-icon {
+  gap: 1rem;
+}
+
+footer .footer__icon {
+  text-decoration: none;
+}
+
+footer .footer__icon i {
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  color: #333333;
+  border-radius: 50%;
+  border: #333333 solid 1px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+footer .footer__icon i:hover {
+  color: #fff;
+  background-color: #333333;
+}
 /*# sourceMappingURL=main.css.map */
