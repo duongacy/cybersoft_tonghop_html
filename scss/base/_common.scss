@@ -98,15 +98,15 @@
 // ============
 
 // Section
-section {
-    @extend .padding-y-5;
+.section {
+    @extend .padding-y-4;
 }
 .section__heading {
-    @extend .padding-y-2;
+    @extend .padding-y-1;
     text-align: center;
 }
 .section__content {
-    @extend .padding-y-4;
+    @extend .padding-y-2;
 }
 
 

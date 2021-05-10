@@ -20,12 +20,13 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            &:hover {
-                background-color: $primary-color;
-            }
+            transition: all .5s;
         }
         .feature-content {
             padding-top: 2rem;
+        }
+        &:hover .icon{
+            background-color: $primary-color;
         }
     }
 
