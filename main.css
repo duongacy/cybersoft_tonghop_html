@@ -154,7 +154,7 @@ header {
   -webkit-transition: all 1s;
   transition: all 1s;
   position: fixed;
-  z-index: 3;
+  z-index: 10;
   width: 100%;
   background-color: transparent;
   padding: 2rem 0;
@@ -864,3 +864,4 @@ footer .footer__icon i:hover {
   background-color: #D6B161;
   color: #333333;
 }
+/*# sourceMappingURL=main.css.map */
