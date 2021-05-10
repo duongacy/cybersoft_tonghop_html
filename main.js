@@ -31,7 +31,6 @@ function addAboutAnimate() {
     animateElements.forEach(function (item, index) {
         var itemBoundingBox = item.getBoundingClientRect();
         if (itemBoundingBox.top <= window.innerHeight/1.5) {
-            item.classList.remove(item.getAttribute("animateClass"));
             item.classList.add(item.getAttribute("animateClass"));
             item.style.opacity = 1;
         }
